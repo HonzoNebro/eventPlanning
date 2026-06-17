@@ -1,0 +1,13 @@
+name = "event-planning"
+compatibility_date = "2026-06-17"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "event-planning"
+database_id = "replace-with-cloudflare-d1-id"
+
+[vars]
+SESSION_SECRET = "replace-in-cloudflare"
+ADMIN_PASSWORD = "replace-in-cloudflare"

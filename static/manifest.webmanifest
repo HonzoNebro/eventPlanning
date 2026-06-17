@@ -1,0 +1,15 @@
+{
+  "name": "Event Planner",
+  "short_name": "Events",
+  "start_url": "/pwa.html",
+  "display": "standalone",
+  "background_color": "#050608",
+  "theme_color": "#050608",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
