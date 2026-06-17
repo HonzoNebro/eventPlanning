@@ -56,6 +56,33 @@ Despues de crear el token, copia su valor en la variable `CLOUDFLARE_API_TOKEN` 
 6. Crea la base D1 y reemplaza `database_id` en `wrangler.toml`.
 7. Aplica migraciones con Wrangler.
 
+Para crear la base D1 desde local:
+
+```bash
+npx wrangler d1 create event-planning
+```
+
+El comando devuelve un bloque como este:
+
+```toml
+[[d1_databases]]
+binding = "DB"
+database_name = "event-planning"
+database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+```
+
+Copia el `database_id` real en `wrangler.toml`, commitea y sube el cambio. Mientras `database_id` tenga `replace-with-cloudflare-d1-id`, el deploy falla con:
+
+```text
+binding DB of type d1 must have a valid `database_id` specified
+```
+
+Despues aplica migraciones en remoto:
+
+```bash
+npm run db:migrate:remote
+```
+
 Para publicar manualmente desde local, usa:
 
 ```bash

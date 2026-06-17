@@ -10,6 +10,7 @@
     "workers:deploy": "wrangler deploy",
     "deploy:pages": "npm run build && npm run pages:deploy",
     "deploy:workers": "npm run build && npm run workers:deploy",
+    "db:migrate:remote": "wrangler d1 migrations apply event-planning --remote",
     "preview": "vite preview --host 0.0.0.0",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run"
