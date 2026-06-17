@@ -1,0 +1,1745 @@
+{
+  "event": {
+    "slug": "resurrection-fest-2026",
+    "name": "Resurrection Fest 2026",
+    "timezone": "Europe/Madrid",
+    "startsOn": "2026-07-01",
+    "endsOn": "2026-07-04",
+    "isPublic": true
+  },
+  "days": [
+    {
+      "id": "resurrection-fest-2026-2026-07-01",
+      "label": "Mie 1",
+      "visualStartsAt": "2026-07-01T15:00:00+02:00",
+      "visualEndsAt": "2026-07-02T03:00:00+02:00",
+      "durationMinutes": 720
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02",
+      "label": "Jue 2",
+      "visualStartsAt": "2026-07-02T15:00:00+02:00",
+      "visualEndsAt": "2026-07-03T03:30:00+02:00",
+      "durationMinutes": 750
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03",
+      "label": "Vie 3",
+      "visualStartsAt": "2026-07-03T14:30:00+02:00",
+      "visualEndsAt": "2026-07-04T03:30:00+02:00",
+      "durationMinutes": 780
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04",
+      "label": "Sab 4",
+      "visualStartsAt": "2026-07-04T14:05:00+02:00",
+      "visualEndsAt": "2026-07-05T03:30:00+02:00",
+      "durationMinutes": 805
+    }
+  ],
+  "stages": [
+    {
+      "id": "resurrection-fest-2026-main",
+      "name": "Main",
+      "color": "#d00000",
+      "order": 1
+    },
+    {
+      "id": "resurrection-fest-2026-ritual",
+      "name": "Ritual",
+      "color": "#39aeea",
+      "order": 2
+    },
+    {
+      "id": "resurrection-fest-2026-chaos",
+      "name": "Chaos",
+      "color": "#d000b8",
+      "order": 3
+    },
+    {
+      "id": "resurrection-fest-2026-desert",
+      "name": "Desert",
+      "color": "#f2a000",
+      "order": 4
+    }
+  ],
+  "dayMarkers": [],
+  "artists": [
+    {
+      "id": "resurrection-fest-2026-annisokay",
+      "name": "Annisokay",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/7lAi1Cv19DsukgGjbZQxFg"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-crowded",
+      "name": "Crowded",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/29SpS8ITZeNeV1DgOk4gYe"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-aneuma",
+      "name": "Aneuma",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/7bxj5hQmURF8Y1DB3Zalfl"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-man-with-a-mission",
+      "name": "Man With A Mission",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3NTbOmzlj2cL86XFuDVFvZ"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-god-complex",
+      "name": "God Complex",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4Ase9pfG4FCMoiuyRduc8k"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-tss",
+      "name": "TSS",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/0hTsRy6iJPc0fgkxhEHzmT"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-black-maracas",
+      "name": "Black Maracas",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6MSYpTON8eKPfiBnLJ0L8Y"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-president",
+      "name": "President",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/40nPYop0FOD9Syyu5y4dAU"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-immortal-disfigurement",
+      "name": "Immortal Disfigurement",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/7qkUuynmt0X6RkPgvF5ttK"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-pretty-wild",
+      "name": "The Pretty Wild",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4DJ2QHcDJiDC0Kx1xZ9oNm"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-cardiac",
+      "name": "Cardiac",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5k8liQkxD3h9PMRhFBF3ia"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-scratch",
+      "name": "The Scratch",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6BCpGC485tSshwjemmeAmd"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-thrown",
+      "name": "Thrown",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5eBCPtU2iPbzuMRre9BePt"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-browning",
+      "name": "The Browning",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4DSNcg40nf6T3eNAObq1Lo"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-last-train",
+      "name": "Last Train",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4S47feOS2ATuhc7Ao5ilfG"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-a-day-to-remember",
+      "name": "A Day To Remember",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4NiJW4q9ichVqL1aUsgGAN"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-get-the-shot",
+      "name": "Get The Shot",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/47YTOUaDKlPoDHr00r5Wu2"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-self-deception",
+      "name": "Self Deception",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/0FHW0Lp33r3fvIG0HL4mW0"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-lampr3a",
+      "name": "Lampr3a",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3jIBGr0NVe9cmBRI09itgn"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-sabaton",
+      "name": "Sabaton",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3o2dn2O0FCVsWDFSh8qxgG"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-high-vis",
+      "name": "High Vis",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4Gmrt82h2vjGjnp67SG5Nw"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-faetooth",
+      "name": "Faetooth",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6bAM7jeIX4pI5lZ0QoSZjt"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-testament",
+      "name": "Testament",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/28hJdGN1Awf7u3ifk2lVkg"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-fallen-at-dawn",
+      "name": "Fallen At Dawn",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5vMjXRkHRq5HgqCxjpBuxq"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-band-contest",
+      "name": "Band Contest",
+      "links": {},
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-fuet",
+      "name": "Fuet!",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/7aTaQAh9d7z98h0CMrx1s6"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-her-anxiety",
+      "name": "Her Anxiety",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2IZHv7enTnPW7yuS9w1qq7"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-silly-goose",
+      "name": "Silly Goose",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/0GicbfMtwhn3Ch0PdwkADQ"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-caskets",
+      "name": "Caskets",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2XIbOWDT5vZPW7jNyzdfcK"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-blood-command",
+      "name": "Blood Command",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4WfUbvICLrqPW9rzuNGS1f"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-burning-witches",
+      "name": "Burning Witches",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/0eNuNAhL4dW2nvKbSe2mS8"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-blues-pills",
+      "name": "Blues Pills",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2lmQ4CUnjmLIIfnwZdRmMY"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-angelus-apatrida",
+      "name": "Angelus Apatrida",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3bnPBquC93vbHmamojAf59"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-funeral-portrait",
+      "name": "The Funeral Portrait",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4iGsihTcyZ80RQFZhC8bf8"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-belvedere",
+      "name": "Belvedere",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6LaK7jiyyNzB8JVhddxZxG"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-ciclonautas",
+      "name": "Ciclonautas",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/34uFdl5yMIlw9cZWzuZ9Yd"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-iron-maiden",
+      "name": "Iron Maiden",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6mdiAmATAx73kdxrNrnlao"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-callous-daoboys",
+      "name": "The Callous Daoboys",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4ZWRLOs7c4drt9mKGc0Ds0"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-vullvarine",
+      "name": "Vullvarine",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/16MG8AG1y22HDmY8IoI5lY"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-caliban",
+      "name": "Caliban",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/1oeo6cC9Fqa2bxxv67qBQL"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-lionheart",
+      "name": "Lionheart",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/1FnJuDEAah6EmkB9FelWr1"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-anthrax",
+      "name": "Anthrax",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3JysSUOyfVs1UQ0UaESheP"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-psychonaut",
+      "name": "Psychonaut",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/604HhRLmc5DXNS221XKm3a"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-witch-club-satan",
+      "name": "Witch Club Satan",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/395rqoVSDgQIF7fzRfZIoy"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-authority-zero",
+      "name": "Authority Zero",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5CHcX5KtuSz5uo1p5fM3sz"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-feuerschwanz",
+      "name": "Feuerschwanz",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2Ct54gNxKnYLnXk9HhviMI"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-nukore",
+      "name": "Nukore",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/76hPQa6sCQSpbMsSzLVSAw"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-pants-off",
+      "name": "Pants Off",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4fgMYzpV29Kq2DpFcO0p82"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-blaze-the-trail",
+      "name": "Blaze The Trail",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/1fEja8QVLVhPwnIdRxbrCX"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-not-yet",
+      "name": "Not Yet",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3FVi1ppln2XbMy7AOGsoRd"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-madmess",
+      "name": "Madmess",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5heR5lCdbT4TqjgnQNji4U"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-rasmus",
+      "name": "The Rasmus",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/76ptJV8617638xrpeoUtzl"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-oslo-ovnies",
+      "name": "Oslo Ovnies",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3KSBsxMjBEZCxmrj0GEWJI"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-okkultist",
+      "name": "Okkultist",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5s1bNgQ1JLoN1kwKVqhjrN"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-mourir",
+      "name": "Mourir",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/1tcNfL3RYR8u4tZXHsQhSQ"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-bleed-from-within",
+      "name": "Bleed From Within",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5ZvwJikDgdP1PFU4PkAPVG"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-initiate",
+      "name": "Initiate",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4chi4s0FYncuGQul8cezau"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-hulder",
+      "name": "Hulder",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/65vrcJ67suxLePeEhUtLLo"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-rosalie-cunningham",
+      "name": "Rosalie Cunningham",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2DvBNcZ05NC2AOuQa7oyqH"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-trivium",
+      "name": "Trivium",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/278ZYwGhdK6QTzE3MFePnP"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-dying-wish",
+      "name": "Dying Wish",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4igS2MSwOIf3F9YeL929IO"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-gaerea",
+      "name": "Gaerea",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/1wXoI3Ajpv4WwQ3LmcrSBw"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-return-to-dust",
+      "name": "Return To Dust",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/53Hm23U3dtaHeB5Oy6GbaS"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-end-it",
+      "name": "End It",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5YlX74SFjWauq32aKLwAYn"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-limp-bizkit",
+      "name": "Limp Bizkit",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/165ZgPlLkK7bf5bDoFc6Sb"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-nevertel",
+      "name": "Nevertel",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/0uTkKGuqdf7CtKlZLt9N0Y"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-borknagar",
+      "name": "Borknagar",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/0vxxsjcDy61x5zvrOqwHIL"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-cavalera-conspiracy",
+      "name": "Cavalera Conspiracy",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/7F1K4WlMshx23V2TTz4KwV"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-house-of-protection",
+      "name": "House Of Protection",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6fb3I3Q54izgnOMtiZbOBA"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-iscream-never-ground",
+      "name": "Iscream Never Ground",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3VaWHUyDEoBjigERzadi1g"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-stellvris",
+      "name": "Stellvris",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/3n9SWHa9CmQldmLrD9zfll"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-donuts-hole",
+      "name": "Donuts Hole",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2MyxYxswuC6ydFyTWaij3F"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-hamlet",
+      "name": "Hamlet",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/5bTh3KLGlKlcloVl318t1h"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-kruddo",
+      "name": "Kruddo",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4BoX975SpbOBJcOdbFrRnD"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-todo-mal",
+      "name": "Todo Mal",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4S5RAAKKIN3DK14y56tdJ9"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-family-men",
+      "name": "The Family Men",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/1ANDjinr8OtamQ6TCV2HBG"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-imminence",
+      "name": "Imminence",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/7rqJQQxuUOCk052MK5kLsH"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-gems",
+      "name": "The Gems",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/735eXziB2hC9TFcx6wjBsf"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-hand-of-juno",
+      "name": "Hand Of Juno",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2g8hgaQzyK2a6ZD5AOKArj"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-frontierer",
+      "name": "Frontierer",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6AMqkTWbhukzRS5je3Q5qt"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-pod",
+      "name": "P.O.D.",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6KO6G41BBLTDNYOLefWTMU"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-cwfen",
+      "name": "Cwfen",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2osrICe2kgcit3D086z3Lo"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-distant",
+      "name": "Distant",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/7dfpBi0QvO9FmlhBK6XHwJ"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-gridiron",
+      "name": "Gridiron",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2eIUyCr530XyFHd358dxYZ"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-mastodon",
+      "name": "Mastodon",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/1Dvfqq39HxvCJ3GvfeIFuT"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-aa-williams",
+      "name": "A.A. Williams",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/1D0MStnRzJeelcnDjeBo8O"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-dogma",
+      "name": "Dogma",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/4R6XPuqGShFESRVkCePaxj"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-converge",
+      "name": "Converge",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/7kHzfxMLtVHHb523s43rY1"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-marilyn-manson",
+      "name": "Marilyn Manson",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/2VYQTNDsvvKN9wmU5W7xpj"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-the-vintage-caravan",
+      "name": "The Vintage Caravan",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/61MH29rMIyOfuK7KXQznzX"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-blood-incantation",
+      "name": "Blood Incantation",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6FGv87WQ3mJWn3cmLUww6x"
+      },
+      "genres": []
+    },
+    {
+      "id": "resurrection-fest-2026-elwood-stray",
+      "name": "Elwood Stray",
+      "links": {
+        "spotify": "https://open.spotify.com/artist/6n5DUGtIWYMurrtVt7IdZr"
+      },
+      "genres": []
+    }
+  ],
+  "performances": [
+    {
+      "id": "resurrection-fest-2026-2026-07-01-main-annisokay",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-annisokay",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-01T15:25:00+02:00",
+      "endsAt": "2026-07-01T16:15:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-chaos-crowded",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-crowded",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-01T15:25:00+02:00",
+      "endsAt": "2026-07-01T16:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-ritual-aneuma",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-aneuma",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-01T16:15:00+02:00",
+      "endsAt": "2026-07-01T16:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-main-man-with-a-mission",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-man-with-a-mission",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-01T16:55:00+02:00",
+      "endsAt": "2026-07-01T17:45:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-chaos-god-complex",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-god-complex",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-01T16:55:00+02:00",
+      "endsAt": "2026-07-01T17:45:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-ritual-tss",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-tss",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-01T17:45:00+02:00",
+      "endsAt": "2026-07-01T18:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-desert-black-maracas",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-black-maracas",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-01T17:45:00+02:00",
+      "endsAt": "2026-07-01T18:35:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-main-president",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-president",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-01T18:30:00+02:00",
+      "endsAt": "2026-07-01T19:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-chaos-immortal-disfigurement",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-immortal-disfigurement",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-01T18:30:00+02:00",
+      "endsAt": "2026-07-01T19:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-ritual-the-pretty-wild",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-the-pretty-wild",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-01T19:20:00+02:00",
+      "endsAt": "2026-07-01T20:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-desert-cardiac",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-cardiac",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-01T19:20:00+02:00",
+      "endsAt": "2026-07-01T20:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-chaos-the-scratch",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-the-scratch",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-01T20:05:00+02:00",
+      "endsAt": "2026-07-01T21:05:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-main-thrown",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-thrown",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-01T20:10:00+02:00",
+      "endsAt": "2026-07-01T21:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-ritual-the-browning",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-the-browning",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-01T21:00:00+02:00",
+      "endsAt": "2026-07-01T21:50:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-desert-last-train",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-last-train",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-01T21:00:00+02:00",
+      "endsAt": "2026-07-01T22:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-main-a-day-to-remember",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-a-day-to-remember",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-01T21:50:00+02:00",
+      "endsAt": "2026-07-01T23:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-chaos-get-the-shot",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-get-the-shot",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-01T22:00:00+02:00",
+      "endsAt": "2026-07-01T23:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-ritual-self-deception",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-self-deception",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-01T23:00:00+02:00",
+      "endsAt": "2026-07-01T23:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-desert-lampr3a",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-lampr3a",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-01T23:00:00+02:00",
+      "endsAt": "2026-07-02T00:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-main-sabaton",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-sabaton",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-02T00:00:00+02:00",
+      "endsAt": "2026-07-02T01:50:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-chaos-high-vis",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-high-vis",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-02T00:00:00+02:00",
+      "endsAt": "2026-07-02T01:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-desert-faetooth",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-faetooth",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-02T01:10:00+02:00",
+      "endsAt": "2026-07-02T02:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-01-ritual-testament",
+      "visualDayId": "resurrection-fest-2026-2026-07-01",
+      "artistId": "resurrection-fest-2026-testament",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-02T01:50:00+02:00",
+      "endsAt": "2026-07-02T03:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-55.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-main-fallen-at-dawn",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-fallen-at-dawn",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-02T15:25:00+02:00",
+      "endsAt": "2026-07-02T16:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-desert-band-contest",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-band-contest",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-02T15:20:00+02:00",
+      "endsAt": "2026-07-02T16:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-chaos-fuet",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-fuet",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-02T15:45:00+02:00",
+      "endsAt": "2026-07-02T16:35:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-ritual-her-anxiety",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-her-anxiety",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-02T16:10:00+02:00",
+      "endsAt": "2026-07-02T16:50:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-desert-silly-goose",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-silly-goose",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-02T16:35:00+02:00",
+      "endsAt": "2026-07-02T17:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-main-caskets",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-caskets",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-02T16:50:00+02:00",
+      "endsAt": "2026-07-02T17:40:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-chaos-blood-command",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-blood-command",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-02T17:20:00+02:00",
+      "endsAt": "2026-07-02T18:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-ritual-burning-witches",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-burning-witches",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-02T17:40:00+02:00",
+      "endsAt": "2026-07-02T18:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-desert-blues-pills",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-blues-pills",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-02T18:20:00+02:00",
+      "endsAt": "2026-07-02T19:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-main-angelus-apatrida",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-angelus-apatrida",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-02T18:30:00+02:00",
+      "endsAt": "2026-07-02T19:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-ritual-the-funeral-portrait",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-the-funeral-portrait",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-02T19:30:00+02:00",
+      "endsAt": "2026-07-02T20:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-chaos-belvedere",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-belvedere",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-02T19:30:00+02:00",
+      "endsAt": "2026-07-02T20:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-desert-ciclonautas",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-ciclonautas",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-02T20:30:00+02:00",
+      "endsAt": "2026-07-02T21:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-main-iron-maiden",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-iron-maiden",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-02T20:50:00+02:00",
+      "endsAt": "2026-07-02T23:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-chaos-the-callous-daoboys",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-the-callous-daoboys",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-02T21:35:00+02:00",
+      "endsAt": "2026-07-02T22:35:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-desert-vullvarine",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-vullvarine",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-02T22:35:00+02:00",
+      "endsAt": "2026-07-02T23:35:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-ritual-caliban",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-caliban",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-02T23:10:00+02:00",
+      "endsAt": "2026-07-03T00:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-chaos-lionheart",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-lionheart",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-02T23:45:00+02:00",
+      "endsAt": "2026-07-03T01:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-main-anthrax",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-anthrax",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-03T00:20:00+02:00",
+      "endsAt": "2026-07-03T01:35:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-desert-psychonaut",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-psychonaut",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-03T01:00:00+02:00",
+      "endsAt": "2026-07-03T02:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-ritual-witch-club-satan",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-witch-club-satan",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-03T01:35:00+02:00",
+      "endsAt": "2026-07-03T02:25:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-chaos-authority-zero",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-authority-zero",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-03T02:10:00+02:00",
+      "endsAt": "2026-07-03T03:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-02-main-feuerschwanz",
+      "visualDayId": "resurrection-fest-2026-2026-07-02",
+      "artistId": "resurrection-fest-2026-feuerschwanz",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-03T02:25:00+02:00",
+      "endsAt": "2026-07-03T03:25:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-54.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-ritual-nukore",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-nukore",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-03T15:05:00+02:00",
+      "endsAt": "2026-07-03T15:50:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-desert-band-contest",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-band-contest",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-03T15:05:00+02:00",
+      "endsAt": "2026-07-03T16:35:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-main-blaze-the-trail",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-blaze-the-trail",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-03T15:50:00+02:00",
+      "endsAt": "2026-07-03T16:35:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-chaos-pants-off",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-pants-off",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-03T15:50:00+02:00",
+      "endsAt": "2026-07-03T16:35:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-ritual-not-yet",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-not-yet",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-03T16:35:00+02:00",
+      "endsAt": "2026-07-03T17:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-desert-madmess",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-madmess",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-03T16:35:00+02:00",
+      "endsAt": "2026-07-03T17:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-main-the-rasmus",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-the-rasmus",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-03T17:20:00+02:00",
+      "endsAt": "2026-07-03T18:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-chaos-oslo-ovnies",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-oslo-ovnies",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-03T17:20:00+02:00",
+      "endsAt": "2026-07-03T18:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-ritual-okkultist",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-okkultist",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-03T18:10:00+02:00",
+      "endsAt": "2026-07-03T19:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-desert-mourir",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-mourir",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-03T18:10:00+02:00",
+      "endsAt": "2026-07-03T19:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-main-bleed-from-within",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-bleed-from-within",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-03T19:00:00+02:00",
+      "endsAt": "2026-07-03T20:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-chaos-initiate",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-initiate",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-03T19:00:00+02:00",
+      "endsAt": "2026-07-03T19:50:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-ritual-hulder",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-hulder",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-03T20:00:00+02:00",
+      "endsAt": "2026-07-03T20:50:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-desert-rosalie-cunningham",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-rosalie-cunningham",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-03T20:00:00+02:00",
+      "endsAt": "2026-07-03T20:50:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-main-trivium",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-trivium",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-03T20:50:00+02:00",
+      "endsAt": "2026-07-03T22:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-chaos-dying-wish",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-dying-wish",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-03T20:50:00+02:00",
+      "endsAt": "2026-07-03T21:50:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-ritual-gaerea",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-gaerea",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-03T22:00:00+02:00",
+      "endsAt": "2026-07-03T23:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-desert-return-to-dust",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-return-to-dust",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-03T22:00:00+02:00",
+      "endsAt": "2026-07-03T23:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-chaos-end-it",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-end-it",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-03T23:00:00+02:00",
+      "endsAt": "2026-07-04T00:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-main-limp-bizkit",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-limp-bizkit",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-03T23:10:00+02:00",
+      "endsAt": "2026-07-04T00:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-ritual-nevertel",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-nevertel",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-04T00:35:00+02:00",
+      "endsAt": "2026-07-04T01:25:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-desert-borknagar",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-borknagar",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-04T00:35:00+02:00",
+      "endsAt": "2026-07-04T01:45:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-main-cavalera-conspiracy",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-cavalera-conspiracy",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-04T01:25:00+02:00",
+      "endsAt": "2026-07-04T02:40:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-03-chaos-house-of-protection",
+      "visualDayId": "resurrection-fest-2026-2026-07-03",
+      "artistId": "resurrection-fest-2026-house-of-protection",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-04T01:40:00+02:00",
+      "endsAt": "2026-07-04T02:40:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-51.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-main-iscream-never-ground",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-iscream-never-ground",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-04T14:50:00+02:00",
+      "endsAt": "2026-07-04T15:40:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-desert-band-contest",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-band-contest",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-04T14:50:00+02:00",
+      "endsAt": "2026-07-04T15:30:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-ritual-stellvris",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-stellvris",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-04T15:40:00+02:00",
+      "endsAt": "2026-07-04T16:25:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-chaos-donuts-hole",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-donuts-hole",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-04T15:40:00+02:00",
+      "endsAt": "2026-07-04T16:25:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-main-hamlet",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-hamlet",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-04T16:25:00+02:00",
+      "endsAt": "2026-07-04T17:15:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-desert-kruddo",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-kruddo",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-04T16:25:00+02:00",
+      "endsAt": "2026-07-04T17:15:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-ritual-todo-mal",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-todo-mal",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-04T17:15:00+02:00",
+      "endsAt": "2026-07-04T18:05:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-chaos-the-family-men",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-the-family-men",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-04T17:15:00+02:00",
+      "endsAt": "2026-07-04T18:05:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-main-imminence",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-imminence",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-04T18:05:00+02:00",
+      "endsAt": "2026-07-04T19:05:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-desert-the-gems",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-the-gems",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-04T18:15:00+02:00",
+      "endsAt": "2026-07-04T19:05:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-ritual-hand-of-juno",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-hand-of-juno",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-04T19:05:00+02:00",
+      "endsAt": "2026-07-04T19:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-chaos-frontierer",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-frontierer",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-04T19:05:00+02:00",
+      "endsAt": "2026-07-04T19:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-main-pod",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-pod",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-04T19:55:00+02:00",
+      "endsAt": "2026-07-04T20:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-desert-cwfen",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-cwfen",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-04T19:55:00+02:00",
+      "endsAt": "2026-07-04T20:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-ritual-distant",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-distant",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-04T20:55:00+02:00",
+      "endsAt": "2026-07-04T21:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-chaos-gridiron",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-gridiron",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-04T20:55:00+02:00",
+      "endsAt": "2026-07-04T21:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-main-mastodon",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-mastodon",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-04T21:55:00+02:00",
+      "endsAt": "2026-07-04T23:10:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-desert-aa-williams",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-aa-williams",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-04T21:55:00+02:00",
+      "endsAt": "2026-07-04T22:55:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-ritual-dogma",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-dogma",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-04T23:10:00+02:00",
+      "endsAt": "2026-07-05T00:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-chaos-converge",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-converge",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-04T23:10:00+02:00",
+      "endsAt": "2026-07-05T00:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-main-marilyn-manson",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-marilyn-manson",
+      "stageId": "resurrection-fest-2026-main",
+      "startsAt": "2026-07-05T00:30:00+02:00",
+      "endsAt": "2026-07-05T02:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-desert-the-vintage-caravan",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-the-vintage-caravan",
+      "stageId": "resurrection-fest-2026-desert",
+      "startsAt": "2026-07-05T00:50:00+02:00",
+      "endsAt": "2026-07-05T02:00:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-ritual-blood-incantation",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-blood-incantation",
+      "stageId": "resurrection-fest-2026-ritual",
+      "startsAt": "2026-07-05T02:10:00+02:00",
+      "endsAt": "2026-07-05T03:25:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    },
+    {
+      "id": "resurrection-fest-2026-2026-07-04-chaos-elwood-stray",
+      "visualDayId": "resurrection-fest-2026-2026-07-04",
+      "artistId": "resurrection-fest-2026-elwood-stray",
+      "stageId": "resurrection-fest-2026-chaos",
+      "startsAt": "2026-07-05T02:10:00+02:00",
+      "endsAt": "2026-07-05T03:20:00+02:00",
+      "sourceImage": "photo_2026-06-13_10-55-35.jpg",
+      "confidence": "manual"
+    }
+  ]
+}
