@@ -172,7 +172,7 @@
     {/if}
 
     {#if embed}
-      <iframe title={`Spotify ${artist?.name}`} src={embed} width="100%" height="152" loading="lazy"></iframe>
+      <iframe title={`Spotify ${artist?.name}`} src={embed} width="100%" height="82" loading="lazy"></iframe>
     {:else if artist}
       <a class="spotify-link" href={`https://open.spotify.com/search/${encodeURIComponent(artist.name)}`} target="_blank" rel="noreferrer">
         Buscar en Spotify
@@ -422,9 +422,11 @@
   }
 
   iframe {
+    display: block;
     margin-top: 14px;
     border: 1px solid rgba(244, 241, 234, 0.14);
     border-radius: 8px;
+    background: #121212;
   }
 
   .spotify-link {
