@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "svelte-kit sync && vite build",
-    "pages:deploy": "wrangler pages deploy .svelte-kit/cloudflare --project-name event-planning",
+    "pages:deploy": "wrangler pages deploy .svelte-kit/cloudflare --project-name ${CLOUDFLARE_PROJECT_NAME:-event-planning}",
     "deploy:pages": "npm run build && npm run pages:deploy",
     "preview": "vite preview --host 0.0.0.0",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

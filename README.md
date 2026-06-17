@@ -44,6 +44,12 @@ Si Cloudflare ejecuta `npm run pages:deploy`, el token debe permitir desplegar P
 
 Si el token no tiene esos permisos, Wrangler falla con `Authentication error [code: 10000]` al consultar `/pages/projects/event-planning`.
 
+Despues de crear el token, copia su valor en la variable `CLOUDFLARE_API_TOKEN` del proyecto. Cloudflare solo muestra el valor una vez; si ya cerraste la pantalla, crea un token nuevo y reemplaza la variable. No basta con crear el token en `My Profile`.
+
+Si el proyecto Pages no se llama exactamente `event-planning`, configura tambien:
+
+- `CLOUDFLARE_PROJECT_NAME`: nombre exacto del proyecto en Cloudflare Pages.
+
 ## Deploy
 
 1. Sube el repo a GitHub.
