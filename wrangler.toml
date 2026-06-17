@@ -1,4 +1,4 @@
-name = "event-planning"
+name = "eventplanning"
 compatibility_date = "2026-06-17"
 compatibility_flags = ["nodejs_compat"]
 main = ".svelte-kit/cloudflare/_worker.js"
