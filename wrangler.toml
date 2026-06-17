@@ -8,9 +8,9 @@ directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
 
 [[d1_databases]]
-binding = "DB"
+binding = "event_planning"
 database_name = "event-planning"
-database_id = "replace-with-cloudflare-d1-id"
+database_id = "61895519-8ca0-4d99-a0a5-a3a354f04e99"
 
 [vars]
 SESSION_SECRET = "replace-in-cloudflare"
