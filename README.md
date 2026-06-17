@@ -34,6 +34,15 @@ Configura en Cloudflare Pages:
 - `ADMIN_PASSWORD`: contraseña única del panel admin.
 - `SESSION_SECRET`: secreto largo para firmar cookies.
 - Binding D1 `DB`.
+- `CLOUDFLARE_API_TOKEN`: solo si usas un deploy command con Wrangler dentro de Cloudflare Builds.
+
+Si Cloudflare ejecuta `npm run pages:deploy`, el token debe permitir desplegar Pages en la cuenta:
+
+- Account permissions: `Cloudflare Pages:Edit`.
+- Account permissions: `Account Settings:Read`.
+- Account resources: la cuenta donde vive el proyecto Pages.
+
+Si el token no tiene esos permisos, Wrangler falla con `Authentication error [code: 10000]` al consultar `/pages/projects/event-planning`.
 
 ## Deploy
 
