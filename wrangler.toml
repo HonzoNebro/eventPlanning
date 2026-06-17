@@ -1,4 +1,4 @@
-name = "event-planning"
+name = "eventplanning"
 compatibility_date = "2026-06-17"
 compatibility_flags = ["nodejs_compat"]
 main = ".svelte-kit/cloudflare/_worker.js"
@@ -8,7 +8,7 @@ directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
 
 [[d1_databases]]
-binding = "event_planning"
+binding = "DB"
 database_name = "event-planning"
 database_id = "61895519-8ca0-4d99-a0a5-a3a354f04e99"
 
