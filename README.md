@@ -41,7 +41,7 @@ Configura en Cloudflare Pages:
 2. Crea un proyecto en Cloudflare Pages conectado al repo.
 3. Build command: `npm run build`.
 4. Build output directory: `.svelte-kit/cloudflare`.
-5. Deploy command: deja este campo vacio. No uses `npx wrangler deploy`; ese comando es para Workers y falla en proyectos Pages.
+5. Deploy command: `npm run pages:deploy`. No uses `npx wrangler deploy`; ese comando es para Workers y falla en proyectos Pages.
 6. Crea la base D1 y reemplaza `database_id` en `wrangler.toml`.
 7. Aplica migraciones con Wrangler.
 
@@ -51,7 +51,7 @@ Para publicar manualmente desde local, usa:
 npm run deploy:pages
 ```
 
-En Cloudflare Pages, el despliegue conectado a GitHub no necesita ese comando manual: Pages sube automaticamente el output del build.
+Si Cloudflare muestra un campo obligatorio de deploy command, usa `npm run pages:deploy` para subir el output que ya generó el build.
 
 ## Rutas
 
