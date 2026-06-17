@@ -1,6 +1,7 @@
 import type {
   AdminImportPayload,
   Artist,
+  DayMarker,
   EventSummary,
   Interest,
   InterestStatus,
@@ -12,7 +13,7 @@ import type {
   Stage
 } from '$lib/types';
 import { randomId, randomToken, slugify } from '$lib/id';
-import { normalizePerformance, withScheduleHash } from '$lib/schedule';
+import { isExpiredForCleanup, normalizeDayMarker, normalizePerformance, withScheduleHash } from '$lib/schedule';
 
 type Row = Record<string, unknown>;
 
@@ -46,6 +47,10 @@ export async function listPublicEvents(database: D1Database): Promise<EventSumma
 export async function listAdminEvents(database: D1Database): Promise<EventSummary[]> {
   const result = await database.prepare('SELECT * FROM events ORDER BY starts_on DESC, name ASC').all<Row>();
   return (result.results ?? []).map(eventFromRow);
+}
+
+export async function listExpiredAdminEvents(database: D1Database, now = new Date()): Promise<EventSummary[]> {
+  return (await listAdminEvents(database)).filter((event) => isExpiredForCleanup(event, now));
 }
 
 export async function getEventBySlug(
@@ -88,9 +93,10 @@ export async function createGroup(database: D1Database, eventId: string): Promis
 }
 
 export async function getSchedule(database: D1Database, event: EventSummary): Promise<SchedulePayload> {
-  const [daysResult, stagesResult, artistsResult, performancesResult] = await Promise.all([
+  const [daysResult, stagesResult, markerResult, artistsResult, performancesResult] = await Promise.all([
     database.prepare('SELECT * FROM event_days WHERE event_id = ? ORDER BY sort_order ASC').bind(event.id).all<Row>(),
     database.prepare('SELECT * FROM stages WHERE event_id = ? ORDER BY sort_order ASC').bind(event.id).all<Row>(),
+    database.prepare('SELECT * FROM day_markers WHERE event_id = ? ORDER BY starts_at ASC').bind(event.id).all<Row>(),
     database.prepare('SELECT * FROM artists WHERE event_id = ? ORDER BY name ASC').bind(event.id).all<Row>(),
     database.prepare('SELECT * FROM performances WHERE event_id = ? ORDER BY starts_at ASC').bind(event.id).all<Row>()
   ]);
@@ -107,6 +113,17 @@ export async function getSchedule(database: D1Database, event: EventSummary): Pr
     name: text(row, 'name'),
     color: text(row, 'color'),
     order: number(row, 'sort_order')
+  }));
+  const dayMarkers: DayMarker[] = (markerResult.results ?? []).map((row) => ({
+    id: text(row, 'id'),
+    visualDayId: text(row, 'visual_day_id'),
+    label: text(row, 'label'),
+    startsAt: text(row, 'starts_at'),
+    endsAt: text(row, 'ends_at') || undefined,
+    kind: text(row, 'kind') === 'doors' ? 'doors' : 'info',
+    spansAllStages: Boolean(row.spans_all_stages),
+    startMinute: number(row, 'start_minute'),
+    durationMinutes: number(row, 'duration_minutes')
   }));
   const artists: Artist[] = (artistsResult.results ?? []).map((row) => ({
     id: text(row, 'id'),
@@ -140,6 +157,7 @@ export async function getSchedule(database: D1Database, event: EventSummary): Pr
     },
     days,
     stages,
+    dayMarkers,
     artists,
     performances,
     generatedAt: new Date().toISOString()
@@ -312,6 +330,47 @@ export async function deleteOwnNote(database: D1Database, participantId: string,
   return Number(result.meta?.changes ?? 0) > 0;
 }
 
+export async function setEventPublic(database: D1Database, slug: string, isPublic: boolean): Promise<EventSummary | null> {
+  await database
+    .prepare('UPDATE events SET is_public = ?, updated_at = CURRENT_TIMESTAMP WHERE slug = ?')
+    .bind(isPublic ? 1 : 0, slug)
+    .run();
+  return getEventBySlug(database, slug, true);
+}
+
+export async function deleteEvent(database: D1Database, slug: string): Promise<boolean> {
+  const event = await getEventBySlug(database, slug, true);
+  if (!event) return false;
+  await database.batch([
+    database
+      .prepare('DELETE FROM notes WHERE performance_id IN (SELECT id FROM performances WHERE event_id = ?)')
+      .bind(event.id),
+    database
+      .prepare('DELETE FROM interests WHERE performance_id IN (SELECT id FROM performances WHERE event_id = ?)')
+      .bind(event.id),
+    database
+      .prepare('DELETE FROM participants WHERE group_id IN (SELECT id FROM groups WHERE event_id = ?)')
+      .bind(event.id),
+    database.prepare('DELETE FROM groups WHERE event_id = ?').bind(event.id),
+    database.prepare('DELETE FROM performances WHERE event_id = ?').bind(event.id),
+    database.prepare('DELETE FROM day_markers WHERE event_id = ?').bind(event.id),
+    database.prepare('DELETE FROM artists WHERE event_id = ?').bind(event.id),
+    database.prepare('DELETE FROM stages WHERE event_id = ?').bind(event.id),
+    database.prepare('DELETE FROM event_days WHERE event_id = ?').bind(event.id)
+  ]);
+  const result = await database.prepare('DELETE FROM events WHERE id = ?').bind(event.id).run();
+  return Number(result.meta?.changes ?? 0) > 0;
+}
+
+export async function deleteExpiredEvents(database: D1Database, now = new Date()): Promise<number> {
+  const expired = await listExpiredAdminEvents(database, now);
+  let deleted = 0;
+  for (const event of expired) {
+    if (await deleteEvent(database, event.slug)) deleted += 1;
+  }
+  return deleted;
+}
+
 export async function importEvent(database: D1Database, payload: AdminImportPayload): Promise<EventSummary> {
   const eventId = randomId('event');
   const slug = slugify(payload.event.slug || payload.event.name);
@@ -348,6 +407,30 @@ export async function importEvent(database: D1Database, payload: AdminImportPayl
       database
         .prepare('INSERT INTO stages (id, event_id, name, color, sort_order) VALUES (?, ?, ?, ?, ?)')
         .bind(stage.id, eventId, stage.name, stage.color, stage.order)
+    );
+  });
+  (payload.dayMarkers ?? []).forEach((marker, index) => {
+    const normalized = normalizeDayMarker(marker, dayMap.get(marker.visualDayId) ?? payload.days[0]);
+    statements.push(
+      database
+        .prepare(
+          `INSERT INTO day_markers
+           (id, event_id, visual_day_id, label, starts_at, ends_at, kind, spans_all_stages, start_minute, duration_minutes, sort_order)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+        )
+        .bind(
+          normalized.id,
+          eventId,
+          normalized.visualDayId,
+          normalized.label,
+          normalized.startsAt,
+          normalized.endsAt ?? null,
+          normalized.kind,
+          normalized.spansAllStages ? 1 : 0,
+          normalized.startMinute,
+          normalized.durationMinutes,
+          index + 1
+        )
     );
   });
   payload.artists.forEach((artist) => {

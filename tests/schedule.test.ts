@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { isInterestStatus, minutesBetween, normalizePerformance, startMinuteForDay } from '../src/lib/schedule';
+import {
+  isExpiredForCleanup,
+  isInterestStatus,
+  minutesBetween,
+  normalizeDayMarker,
+  normalizePerformance,
+  startMinuteForDay
+} from '../src/lib/schedule';
 
 const day = {
   id: 'day-1',
@@ -35,6 +42,30 @@ describe('schedule helpers', () => {
     expect(performance.startMinute).toBe(510);
     expect(performance.durationMinutes).toBe(70);
     expect(performance.crossesMidnight).toBe(true);
+  });
+
+  it('normalizes day marker timing without treating it as a performance', () => {
+    const marker = normalizeDayMarker(
+      {
+        id: 'doors',
+        visualDayId: 'day-1',
+        label: 'Apertura/Doors',
+        startsAt: '2026-07-01T15:00:00+02:00',
+        endsAt: '2026-07-01T15:30:00+02:00',
+        kind: 'doors',
+        spansAllStages: true
+      },
+      day
+    );
+
+    expect(marker.startMinute).toBe(0);
+    expect(marker.durationMinutes).toBe(30);
+  });
+
+  it('detects events older than the cleanup grace period', () => {
+    const now = new Date('2026-06-18T12:00:00Z');
+    expect(isExpiredForCleanup({ endsOn: '2026-05-18' }, now)).toBe(true);
+    expect(isExpiredForCleanup({ endsOn: '2026-05-19' }, now)).toBe(false);
   });
 
   it('validates supported interest statuses', () => {

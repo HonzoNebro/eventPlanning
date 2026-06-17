@@ -1,4 +1,4 @@
-import type { InterestStatus, Performance, ScheduleDay, SchedulePayload } from './types';
+import type { DayMarker, EventSummary, InterestStatus, Performance, ScheduleDay, SchedulePayload } from './types';
 
 export const INTEREST_STATUSES: InterestStatus[] = ['going', 'maybe', 'skip'];
 
@@ -32,6 +32,31 @@ export function normalizePerformance(
   };
 }
 
+export function normalizeDayMarker(
+  marker: Omit<DayMarker, 'startMinute' | 'durationMinutes'> &
+    Partial<Pick<DayMarker, 'startMinute' | 'durationMinutes'>>,
+  day: Pick<ScheduleDay, 'visualStartsAt'>
+): DayMarker {
+  const startMinute = marker.startMinute ?? startMinuteForDay(day, marker.startsAt);
+  const durationMinutes = marker.durationMinutes ?? (marker.endsAt ? minutesBetween(marker.startsAt, marker.endsAt) : 30);
+
+  return {
+    ...marker,
+    startMinute,
+    durationMinutes
+  };
+}
+
+export function isExpiredForCleanup(
+  event: Pick<EventSummary, 'endsOn'>,
+  now = new Date(),
+  graceDays = 30
+): boolean {
+  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  const cutoff = today - graceDays * 24 * 60 * 60 * 1000;
+  return Date.parse(`${event.endsOn}T00:00:00Z`) < cutoff;
+}
+
 export async function contentHash(payload: unknown): Promise<string> {
   const data = new TextEncoder().encode(JSON.stringify(payload));
   const digest = await crypto.subtle.digest('SHA-256', data);
@@ -48,6 +73,7 @@ export async function withScheduleHash(payload: Omit<SchedulePayload, 'contentHa
       festival: payload.festival,
       days: payload.days,
       stages: payload.stages,
+      dayMarkers: payload.dayMarkers,
       artists: payload.artists,
       performances: payload.performances
     })

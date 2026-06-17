@@ -36,6 +36,7 @@
   const artists = $derived(new Map(schedule.artists.map((artist) => [artist.id, artist])));
   const stages = $derived([...schedule.stages].sort((a, b) => a.order - b.order));
   const day = $derived(schedule.days[dayIndex]);
+  const dayMarkers = $derived((schedule.dayMarkers ?? []).filter((marker) => marker.visualDayId === day.id));
   const myVotes = $derived(
     new Map(
       social.interests
@@ -110,6 +111,19 @@
       {/each}
     </aside>
     <div class="stage-grid">
+      {#each dayMarkers as marker}
+        <div
+          class:doors={marker.kind === 'doors'}
+          class="day-marker"
+          style={`top:${marker.startMinute * minuteScale}px;height:${Math.max(32, marker.durationMinutes * minuteScale)}px`}
+        >
+          <strong>{marker.label}</strong>
+          <span>
+            {time(marker.startsAt)}
+            {#if marker.endsAt} - {time(marker.endsAt)}{/if}
+          </span>
+        </div>
+      {/each}
       {#each stages as stage}
         <section class="stage-column" style={`--stage-color:${stage.color}`}>
           <h2>{stage.name}</h2>
@@ -263,9 +277,38 @@
   }
 
   .stage-grid {
+    position: relative;
     display: flex;
     min-width: 680px;
     height: var(--day-height);
+  }
+
+  .day-marker {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    border: 1px solid rgba(244, 241, 234, 0.22);
+    border-radius: 8px;
+    background: rgba(244, 241, 234, 0.12);
+    color: #f4f1ea;
+    pointer-events: none;
+    text-align: center;
+  }
+
+  .day-marker.doors {
+    background: linear-gradient(90deg, rgba(124, 58, 237, 0.86), rgba(192, 132, 252, 0.82));
+  }
+
+  .day-marker strong,
+  .day-marker span {
+    font-size: 12px;
+    line-height: 1;
   }
 
   .stage-column {

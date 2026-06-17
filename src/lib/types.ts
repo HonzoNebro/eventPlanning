@@ -48,6 +48,24 @@ export interface Performance {
   crossesMidnight: boolean;
 }
 
+export interface DayMarker {
+  id: string;
+  visualDayId: string;
+  label: string;
+  startsAt: string;
+  endsAt?: string;
+  kind: 'doors' | 'info';
+  spansAllStages: boolean;
+  startMinute: number;
+  durationMinutes: number;
+}
+
+export type AdminImportDayMarker = Omit<DayMarker, 'startMinute' | 'durationMinutes'> &
+  Partial<Pick<DayMarker, 'startMinute' | 'durationMinutes'>>;
+
+export type AdminImportPerformance = Omit<Performance, 'startMinute' | 'durationMinutes' | 'crossesMidnight'> &
+  Partial<Pick<Performance, 'startMinute' | 'durationMinutes' | 'crossesMidnight'>>;
+
 export interface SchedulePayload {
   version: number;
   festival: {
@@ -60,6 +78,7 @@ export interface SchedulePayload {
   };
   days: ScheduleDay[];
   stages: Stage[];
+  dayMarkers: DayMarker[];
   artists: Artist[];
   performances: Performance[];
   generatedAt: string;
@@ -101,6 +120,7 @@ export interface AdminImportPayload {
   };
   days: ScheduleDay[];
   stages: Stage[];
+  dayMarkers?: AdminImportDayMarker[];
   artists: Artist[];
-  performances: Performance[];
+  performances: AdminImportPerformance[];
 }

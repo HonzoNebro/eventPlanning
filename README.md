@@ -114,7 +114,10 @@ El admin acepta JSON con:
 - `event`: slug, name, timezone, startsOn, endsOn, isPublic.
 - `days`: id, label, visualStartsAt, visualEndsAt, durationMinutes.
 - `stages`: id, name, color, order.
+- `dayMarkers`: id, visualDayId, label, startsAt, endsAt opcional, kind (`doors` o `info`), spansAllStages.
 - `artists`: id, name, links.spotify, genres.
 - `performances`: id, visualDayId, artistId, stageId, startsAt, endsAt, confidence.
 
 `startMinute`, `durationMinutes` y `crossesMidnight` se calculan si no vienen en el JSON.
+
+Los marcadores de día sirven para hitos como apertura de puertas. No son conciertos, no generan votos ni notas y se muestran como banda informativa en el horario.

@@ -1,9 +1,10 @@
 <script lang="ts">
   import type { EventSummary } from '$lib/types';
 
-  let { data }: { data: { events: EventSummary[] } } = $props();
+  let { data }: { data: { events: EventSummary[]; expiredEvents: EventSummary[] } } = $props();
   let importJson = $state('');
   let message = $state('');
+  let busy = $state('');
 
   const sample = {
     event: {
@@ -24,6 +25,16 @@
       }
     ],
     stages: [{ id: 'main', name: 'Main', color: '#d00000', order: 1 }],
+    dayMarkers: [
+      {
+        id: 'doors-day-1',
+        visualDayId: 'day-1',
+        label: 'Apertura/Doors',
+        startsAt: '2026-07-01T15:00:00+02:00',
+        kind: 'doors',
+        spansAllStages: true
+      }
+    ],
     artists: [{ id: 'artist-a', name: 'Artist A', links: { spotify: '' }, genres: ['Rock'] }],
     performances: [
       {
@@ -51,6 +62,54 @@
     }
     location.reload();
   }
+
+  async function setPublished(event: EventSummary, isPublic: boolean) {
+    busy = event.slug;
+    message = '';
+    const response = await fetch(`/api/admin/events/${event.slug}`, {
+      method: 'PATCH',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ isPublic })
+    });
+    if (!response.ok) {
+      message = 'No se pudo cambiar el estado del evento.';
+      busy = '';
+      return;
+    }
+    location.reload();
+  }
+
+  async function deleteEvent(event: EventSummary) {
+    const confirmed = confirm(
+      `Vas a borrar definitivamente "${event.name}". Se eliminarán horario, grupos, participantes, votos y notas. Esta acción no se puede deshacer.`
+    );
+    if (!confirmed) return;
+    busy = event.slug;
+    message = '';
+    const response = await fetch(`/api/admin/events/${event.slug}`, { method: 'DELETE' });
+    if (!response.ok) {
+      message = 'No se pudo borrar el evento.';
+      busy = '';
+      return;
+    }
+    location.reload();
+  }
+
+  async function deleteExpiredEvents() {
+    const confirmed = confirm(
+      `Vas a borrar definitivamente ${data.expiredEvents.length} eventos pasados hace más de 30 días, incluyendo sus grupos, votos y notas.`
+    );
+    if (!confirmed) return;
+    busy = 'expired';
+    message = '';
+    const response = await fetch('/api/admin/events?expired=1', { method: 'DELETE' });
+    if (!response.ok) {
+      message = 'No se pudieron borrar los eventos caducados.';
+      busy = '';
+      return;
+    }
+    location.reload();
+  }
 </script>
 
 <main class="page">
@@ -59,8 +118,21 @@
       <p class="muted">Panel admin</p>
       <h1>Eventos</h1>
     </div>
-    <a class="button secondary" href="/">Ver sitio</a>
+    <div class="header-actions">
+      <a class="button secondary" href="/">Ver sitio</a>
+      <a class="button" href="/admin/events/new">Crear evento</a>
+    </div>
   </header>
+
+  {#if data.expiredEvents.length}
+    <section class="panel expired">
+      <div>
+        <h2>Eventos pasados hace más de 30 días</h2>
+        <p class="muted">{data.expiredEvents.length} eventos pueden borrarse para limpiar la base de datos.</p>
+      </div>
+      <button type="button" disabled={busy === 'expired'} onclick={deleteExpiredEvents}>Borrar caducados</button>
+    </section>
+  {/if}
 
   <section class="grid">
     <div class="panel list">
@@ -72,7 +144,13 @@
               <strong>{event.name}</strong>
               <p class="muted">{event.slug} · {event.isPublic ? 'Publicado' : 'Borrador'}</p>
             </div>
-            <a class="button secondary" href={`/admin/events/${event.slug}`}>Abrir</a>
+            <div class="row-actions">
+              <a class="button secondary" href={`/admin/events/${event.slug}`}>Abrir</a>
+              <button class="secondary" type="button" disabled={busy === event.slug} onclick={() => setPublished(event, !event.isPublic)}>
+                {event.isPublic ? 'Despublicar' : 'Publicar'}
+              </button>
+              <button class="danger" type="button" disabled={busy === event.slug} onclick={() => deleteEvent(event)}>Borrar</button>
+            </div>
           </article>
         {/each}
       {:else}
@@ -101,6 +179,14 @@
     margin-bottom: 18px;
   }
 
+  .header-actions,
+  .row-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 8px;
+  }
+
   h1 {
     margin: 0;
     font-size: clamp(42px, 8vw, 78px);
@@ -111,6 +197,20 @@
     display: grid;
     grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1.2fr);
     gap: 14px;
+  }
+
+  .expired {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 14px;
+    padding: 14px;
+    border-color: rgba(245, 184, 75, 0.34);
+  }
+
+  .expired h2 {
+    margin: 0 0 4px;
   }
 
   .panel {
@@ -124,6 +224,16 @@
     align-items: center;
     padding: 12px 0;
     border-top: 1px solid rgba(244, 241, 234, 0.1);
+  }
+
+  .event-row > div:first-child {
+    min-width: 0;
+  }
+
+  .danger {
+    border-color: rgba(251, 113, 133, 0.52);
+    background: rgba(251, 113, 133, 0.14);
+    color: #fecdd3;
   }
 
   .event-row p {
@@ -155,8 +265,15 @@
 
   @media (max-width: 860px) {
     .grid,
-    .admin-header {
+    .admin-header,
+    .expired,
+    .event-row {
       display: grid;
+    }
+
+    .header-actions,
+    .row-actions {
+      justify-content: start;
     }
   }
 </style>

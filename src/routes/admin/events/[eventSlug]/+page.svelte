@@ -5,6 +5,7 @@
   let { data }: { data: { event: EventSummary; schedule: SchedulePayload } } = $props();
   let groupUrl = $state('');
   let message = $state('');
+  let busy = $state(false);
 
   async function createGroup() {
     message = '';
@@ -25,6 +26,38 @@
     link.click();
     URL.revokeObjectURL(url);
   }
+
+  async function setPublished(isPublic: boolean) {
+    busy = true;
+    message = '';
+    const response = await fetch(`/api/admin/events/${data.event.slug}`, {
+      method: 'PATCH',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ isPublic })
+    });
+    if (!response.ok) {
+      message = 'No se pudo cambiar el estado del evento.';
+      busy = false;
+      return;
+    }
+    location.reload();
+  }
+
+  async function deleteEvent() {
+    const confirmed = confirm(
+      `Vas a borrar definitivamente "${data.event.name}". Se eliminarán horario, grupos, participantes, votos y notas. Esta acción no se puede deshacer.`
+    );
+    if (!confirmed) return;
+    busy = true;
+    message = '';
+    const response = await fetch(`/api/admin/events/${data.event.slug}`, { method: 'DELETE' });
+    if (!response.ok) {
+      message = 'No se pudo borrar el evento.';
+      busy = false;
+      return;
+    }
+    location.href = '/admin/events';
+  }
 </script>
 
 <main class="page">
@@ -36,7 +69,11 @@
     <div class="actions">
       <a class="button secondary" href={`/events/${data.event.slug}`}>Ver público</a>
       <button class="secondary" type="button" onclick={downloadJson}>Exportar JSON</button>
+      <button class="secondary" type="button" disabled={busy} onclick={() => setPublished(!data.event.isPublic)}>
+        {data.event.isPublic ? 'Despublicar' : 'Publicar'}
+      </button>
       <button type="button" onclick={createGroup}>Crear grupo</button>
+      <button class="danger" type="button" disabled={busy} onclick={deleteEvent}>Borrar</button>
     </div>
   </header>
 
@@ -78,6 +115,12 @@
     flex-wrap: wrap;
     justify-content: end;
     gap: 8px;
+  }
+
+  .danger {
+    border-color: rgba(251, 113, 133, 0.52);
+    background: rgba(251, 113, 133, 0.14);
+    color: #fecdd3;
   }
 
   .group-url {
