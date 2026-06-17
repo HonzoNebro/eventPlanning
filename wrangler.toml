@@ -11,7 +11,3 @@ binding = "ASSETS"
 binding = "DB"
 database_name = "event-planning"
 database_id = "61895519-8ca0-4d99-a0a5-a3a354f04e99"
-
-[vars]
-SESSION_SECRET = "replace-in-cloudflare"
-ADMIN_PASSWORD = "replace-in-cloudflare"

@@ -5,7 +5,11 @@ export const actions = {
   default: async ({ cookies, platform, request }) => {
     const form = await request.formData();
     const password = String(form.get('password') ?? '');
-    const expected = platform?.env.ADMIN_PASSWORD || 'admin';
+    const expected = platform?.env.ADMIN_PASSWORD ?? (platform ? '' : 'admin');
+    if (!expected) {
+      return fail(500, { message: 'ADMIN_PASSWORD no está configurado en el Worker' });
+    }
+
     if (password !== expected) {
       return fail(401, { message: 'Contraseña incorrecta' });
     }
