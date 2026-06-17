@@ -36,37 +36,33 @@ Configura en Cloudflare Pages:
 - Binding D1 `DB`.
 - `CLOUDFLARE_API_TOKEN`: solo si usas un deploy command con Wrangler dentro de Cloudflare Builds.
 
-Si Cloudflare ejecuta `npm run pages:deploy`, el token debe permitir desplegar Pages en la cuenta:
+Si Cloudflare ejecuta `npm run workers:deploy`, el token debe permitir desplegar Workers en la cuenta:
 
-- Account permissions: `Cloudflare Pages:Edit`.
+- Account permissions: `Workers Scripts:Edit`.
 - Account permissions: `Account Settings:Read`.
 - Account resources: la cuenta donde vive el proyecto Pages.
 
-Si el token no tiene esos permisos, Wrangler falla con `Authentication error [code: 10000]` al consultar `/pages/projects/event-planning`.
+Si el token no tiene esos permisos, Wrangler falla con `Authentication error [code: 10000]`.
 
 Despues de crear el token, copia su valor en la variable `CLOUDFLARE_API_TOKEN` del proyecto. Cloudflare solo muestra el valor una vez; si ya cerraste la pantalla, crea un token nuevo y reemplaza la variable. No basta con crear el token en `My Profile`.
-
-Si el proyecto Pages no se llama exactamente `event-planning`, configura tambien:
-
-- `CLOUDFLARE_PROJECT_NAME`: nombre exacto del proyecto en Cloudflare Pages.
 
 ## Deploy
 
 1. Sube el repo a GitHub.
-2. Crea un proyecto en Cloudflare Pages conectado al repo.
+2. Crea un proyecto en Cloudflare Workers/Builds conectado al repo.
 3. Build command: `npm run build`.
 4. Build output directory: `.svelte-kit/cloudflare`.
-5. Deploy command: `npm run pages:deploy`. No uses `npx wrangler deploy`; ese comando es para Workers y falla en proyectos Pages.
+5. Deploy command: `npm run workers:deploy`.
 6. Crea la base D1 y reemplaza `database_id` en `wrangler.toml`.
 7. Aplica migraciones con Wrangler.
 
 Para publicar manualmente desde local, usa:
 
 ```bash
-npm run deploy:pages
+npm run deploy:workers
 ```
 
-Si Cloudflare muestra un campo obligatorio de deploy command, usa `npm run pages:deploy` para subir el output que ya generó el build.
+Si Cloudflare muestra un campo obligatorio de deploy command, usa `npm run workers:deploy` para subir el Worker y sus assets.
 
 ## Rutas
 
