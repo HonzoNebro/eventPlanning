@@ -33,6 +33,8 @@ Configura estas variables en el Worker desplegado, no solo en las variables del 
 
 - `ADMIN_PASSWORD`: contraseña única del panel admin. Debe ser un `Secret`.
 - `SESSION_SECRET`: secreto largo para firmar cookies. Debe ser un `Secret`.
+- `SPOTIFY_CLIENT_ID`: client id de una app Spotify. Opcional, necesario para autocompletar reproductores.
+- `SPOTIFY_CLIENT_SECRET`: secret de una app Spotify. Debe ser un `Secret`; opcional, necesario para autocompletar reproductores.
 - Binding D1 `DB`.
 - `CLOUDFLARE_API_TOKEN`: solo si usas un deploy command con Wrangler dentro de Cloudflare Builds.
 
@@ -41,7 +43,7 @@ Si estás usando Cloudflare Workers conectado a GitHub, hay dos sitios parecidos
 - `Build` -> `Variables and secrets`: variables disponibles durante `npm run build` y `npm run workers:deploy`.
 - `Worker` -> `Settings` -> `Variables and Secrets`: variables disponibles para la app cuando un usuario entra en la web.
 
-`ADMIN_PASSWORD` y `SESSION_SECRET` deben existir como runtime secrets del Worker. Si los creas solo en el apartado de build, el login admin no los verá.
+`ADMIN_PASSWORD`, `SESSION_SECRET` y las variables de Spotify deben existir como runtime secrets del Worker. Si los creas solo en el apartado de build, la app no los verá en ejecución.
 
 Si Cloudflare ejecuta `npm run workers:deploy`, el token debe permitir desplegar Workers en la cuenta:
 

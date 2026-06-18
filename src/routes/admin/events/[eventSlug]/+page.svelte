@@ -5,7 +5,23 @@
   let { data }: { data: { event: EventSummary; schedule: SchedulePayload } } = $props();
   let groupUrl = $state('');
   let message = $state('');
+  let spotifyMessage = $state('');
   let busy = $state(false);
+  let publishedOverride = $state<boolean | null>(null);
+  let isPublic = $derived(publishedOverride ?? data.event.isPublic);
+
+  type SpotifySummary = {
+    matched: Array<{ artistName: string; spotifyName: string }>;
+    unmatched: Array<{ artistName: string }>;
+    errors: string[];
+  };
+
+  function spotifySummaryMessage(summary: SpotifySummary | undefined) {
+    if (!summary) return '';
+    const parts = [`Spotify: ${summary.matched.length} encontrados`, `${summary.unmatched.length} sin coincidencia`];
+    if (summary.errors.length) parts.push(`${summary.errors.length} avisos`);
+    return parts.join(' · ');
+  }
 
   async function createGroup() {
     message = '';
@@ -40,7 +56,25 @@
       busy = false;
       return;
     }
-    location.reload();
+    const body = (await response.json()) as { event: EventSummary; spotify?: SpotifySummary };
+    publishedOverride = body.event.isPublic;
+    spotifyMessage = spotifySummaryMessage(body.spotify);
+    busy = false;
+  }
+
+  async function updateSpotify() {
+    busy = true;
+    message = '';
+    spotifyMessage = '';
+    const response = await fetch(`/api/admin/events/${data.event.slug}/spotify`, { method: 'POST' });
+    if (!response.ok) {
+      message = 'No se pudo actualizar Spotify.';
+      busy = false;
+      return;
+    }
+    const summary = (await response.json()) as SpotifySummary;
+    spotifyMessage = spotifySummaryMessage(summary);
+    busy = false;
   }
 
   async function deleteEvent() {
@@ -63,15 +97,16 @@
 <main class="page">
   <header class="admin-header">
     <div>
-      <p class="muted">{data.event.isPublic ? 'Publicado' : 'Borrador'}</p>
+      <p class="muted">{isPublic ? 'Publicado' : 'Borrador'}</p>
       <h1>{data.event.name}</h1>
     </div>
     <div class="actions">
       <a class="button secondary" href={`/events/${data.event.slug}`}>Ver público</a>
       <button class="secondary" type="button" onclick={downloadJson}>Exportar JSON</button>
-      <button class="secondary" type="button" disabled={busy} onclick={() => setPublished(!data.event.isPublic)}>
-        {data.event.isPublic ? 'Despublicar' : 'Publicar'}
+      <button class="secondary" type="button" disabled={busy} onclick={() => setPublished(!isPublic)}>
+        {isPublic ? 'Despublicar' : 'Publicar'}
       </button>
+      <button class="secondary" type="button" disabled={busy} onclick={updateSpotify}>Actualizar Spotify</button>
       <button type="button" onclick={createGroup}>Crear grupo</button>
       <button class="danger" type="button" disabled={busy} onclick={deleteEvent}>Borrar</button>
     </div>
@@ -84,6 +119,7 @@
     </section>
   {/if}
   {#if message}<p class="error">{message}</p>{/if}
+  {#if spotifyMessage}<p class="notice">{spotifyMessage}</p>{/if}
 
   <section class="stats">
     <article class="panel"><strong>{data.schedule.days.length}</strong><span>Días</span></article>
@@ -163,6 +199,10 @@
 
   .error {
     color: #fb7185;
+  }
+
+  .notice {
+    color: #86efac;
   }
 
   @media (max-width: 760px) {

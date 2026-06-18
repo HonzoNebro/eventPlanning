@@ -18,6 +18,12 @@ import { isExpiredForCleanup, normalizeDayMarker, normalizePerformance, withSche
 
 type Row = Record<string, unknown>;
 
+export interface ArtistSpotifyRow {
+  id: string;
+  name: string;
+  spotifyUrl: string;
+}
+
 function text(row: Row, key: string): string {
   return String(row[key] ?? '');
 }
@@ -372,6 +378,27 @@ export async function setEventPublic(database: D1Database, slug: string, isPubli
     .bind(isPublic ? 1 : 0, slug)
     .run();
   return getEventBySlug(database, slug, true);
+}
+
+export async function listArtistsMissingSpotify(database: D1Database, eventId: string): Promise<ArtistSpotifyRow[]> {
+  const result = await database
+    .prepare(
+      `SELECT id, name, spotify_url
+       FROM artists
+       WHERE event_id = ? AND (spotify_url IS NULL OR trim(spotify_url) = '')
+       ORDER BY name ASC`
+    )
+    .bind(eventId)
+    .all<Row>();
+  return (result.results ?? []).map((row) => ({
+    id: text(row, 'id'),
+    name: text(row, 'name'),
+    spotifyUrl: text(row, 'spotify_url')
+  }));
+}
+
+export async function updateArtistSpotifyUrl(database: D1Database, artistId: string, spotifyUrl: string): Promise<void> {
+  await database.prepare('UPDATE artists SET spotify_url = ? WHERE id = ?').bind(spotifyUrl, artistId).run();
 }
 
 export async function deleteEvent(database: D1Database, slug: string): Promise<boolean> {
