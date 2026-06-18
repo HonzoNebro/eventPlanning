@@ -15,6 +15,8 @@
   let displayName = $state('');
   let noteModal = $state<string | null>(null);
   let noteBody = $state('');
+  let groupUrl = $state('');
+  let copied = $state(false);
 
   async function loadSocial() {
     const [bootstrapResponse, participantsResponse, interestsResponse] = await Promise.all([
@@ -36,12 +38,18 @@
 
   onMount(async () => {
     const token = new URLSearchParams(location.search).get('g');
+    const storageKey = `group-url:${location.pathname}`;
     try {
       if (token) {
+        groupUrl = `${location.origin}${location.pathname}?g=${encodeURIComponent(token)}`;
+        localStorage.setItem(storageKey, groupUrl);
         await fetch(`/api/groups/activate/${encodeURIComponent(token)}`, { method: 'POST' });
         history.replaceState({}, '', location.pathname);
+      } else {
+        groupUrl = localStorage.getItem(storageKey) ?? '';
       }
       await loadSocial();
+      if (!participant) nameModal = true;
     } catch {
       error = 'No se pudo cargar el grupo.';
     } finally {
@@ -96,6 +104,13 @@
     await fetch(`/api/me/notes/${encodeURIComponent(noteId)}`, { method: 'DELETE' });
     await loadSocial();
   }
+
+  async function copyGroupUrl() {
+    if (!groupUrl) return;
+    await navigator.clipboard.writeText(groupUrl);
+    copied = true;
+    window.setTimeout(() => (copied = false), 1600);
+  }
 </script>
 
 <main class="page">
@@ -114,6 +129,16 @@
   {:else if error}
     <p class="center">{error}</p>
   {:else}
+    {#if groupUrl}
+      <section class="share panel">
+        <div>
+          <strong>Enlace del grupo</strong>
+          <p class="muted">Compártelo con tus amigos para que entren al mismo grupo privado.</p>
+        </div>
+        <input readonly value={groupUrl} aria-label="Enlace privado del grupo" />
+        <button class="secondary" type="button" onclick={copyGroupUrl}>{copied ? 'Copiado' : 'Copiar'}</button>
+      </section>
+    {/if}
     <ScheduleView
       schedule={data.schedule}
       interactive
@@ -166,6 +191,24 @@
     place-items: center;
   }
 
+  .share {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(220px, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .share strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .share p {
+    margin: 0;
+  }
+
   .scrim {
     position: fixed;
     inset: 0;
@@ -210,6 +253,10 @@
   @media (max-width: 680px) {
     .app-header {
       display: grid;
+    }
+
+    .share {
+      grid-template-columns: 1fr;
     }
   }
 </style>
