@@ -13,10 +13,17 @@
   let notes = $state<Note[]>([]);
   let nameModal = $state(false);
   let displayName = $state('');
+  let nameError = $state('');
   let noteModal = $state<string | null>(null);
   let noteBody = $state('');
   let groupUrl = $state('');
   let copied = $state(false);
+  let groupNameKey = '';
+
+  function nameStorageKey(url: string) {
+    const token = new URL(url, location.origin).searchParams.get('g') ?? 'default';
+    return `group-name:${location.pathname}:${token}`;
+  }
 
   async function loadSocial() {
     const [bootstrapResponse, participantsResponse, interestsResponse] = await Promise.all([
@@ -47,8 +54,14 @@
       } else {
         groupUrl = localStorage.getItem(storageKey) ?? '';
       }
+      groupNameKey = nameStorageKey(groupUrl || location.href);
       await loadSocial();
-      if (!participant) nameModal = true;
+      if (participant) {
+        localStorage.setItem(groupNameKey, participant.displayName);
+      } else {
+        displayName = localStorage.getItem(groupNameKey) ?? '';
+        nameModal = true;
+      }
     } catch {
       error = 'No se pudo cargar el grupo.';
     } finally {
@@ -59,16 +72,29 @@
   async function saveName() {
     const endpoint = participant ? '/api/me' : '/api/groups/current/participants';
     const method = participant ? 'PATCH' : 'POST';
+    nameError = '';
     const response = await fetch(endpoint, {
       method,
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ displayName })
     });
-    if (!response.ok) return;
-    participant = (await response.json()).participant;
+    if (!response.ok) {
+      const body = (await response.json().catch(() => ({}))) as { message?: string };
+      nameError = body.message ?? 'No se pudo guardar el nombre.';
+      return;
+    }
+    const body = (await response.json()) as { participant: Participant };
+    participant = body.participant;
+    localStorage.setItem(groupNameKey, body.participant.displayName);
     displayName = '';
     nameModal = false;
     await loadSocial();
+  }
+
+  function openNameModal() {
+    displayName = participant?.displayName ?? localStorage.getItem(groupNameKey) ?? '';
+    nameError = '';
+    nameModal = true;
   }
 
   async function vote(performanceId: string, status: InterestStatus) {
@@ -122,7 +148,7 @@
       schedule={data.schedule}
       interactive
       social={{ participants, interests, notes, participant }}
-      onNeedName={() => { displayName = participant?.displayName ?? ''; nameModal = true; }}
+      onNeedName={openNameModal}
       onShare={copyGroupUrl}
       shareCopied={copied}
       onVote={vote}
@@ -138,6 +164,7 @@
   <form class="modal panel" onsubmit={(event) => { event.preventDefault(); saveName(); }}>
     <h2>¿Cómo te llamas?</h2>
     <input bind:value={displayName} maxlength="40" />
+    {#if nameError}<p class="form-error">{nameError}</p>{/if}
     <button type="submit">Guardar</button>
   </form>
 {/if}
@@ -188,6 +215,13 @@
 
   .modal h2 {
     margin: 0;
+  }
+
+  .form-error {
+    margin: 0;
+    color: #fb7185;
+    font-size: 0.92rem;
+    font-weight: 700;
   }
 
   input,

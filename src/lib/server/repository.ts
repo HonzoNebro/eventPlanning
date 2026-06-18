@@ -13,6 +13,7 @@ import type {
   Stage
 } from '$lib/types';
 import { randomId, randomToken, slugify } from '$lib/id';
+import { normalizeDisplayName } from '$lib/participants';
 import { isExpiredForCleanup, normalizeDayMarker, normalizePerformance, withScheduleHash } from '$lib/schedule';
 
 type Row = Record<string, unknown>;
@@ -184,7 +185,7 @@ export async function createParticipant(
 ): Promise<Participant> {
   const participant = {
     id: randomId('p'),
-    displayName: displayName.trim().slice(0, 40),
+    displayName: normalizeDisplayName(displayName),
     avatarColor
   };
   await database
@@ -205,18 +206,53 @@ export async function getParticipant(database: D1Database, participantId: string
     : null;
 }
 
-export async function updateParticipantName(
+export async function getParticipantInGroup(
   database: D1Database,
+  groupId: string,
+  participantId: string | undefined
+): Promise<Participant | null> {
+  if (!participantId) return null;
+  const row = await database
+    .prepare('SELECT id, display_name, avatar_color FROM participants WHERE id = ? AND group_id = ?')
+    .bind(participantId, groupId)
+    .first<Row>();
+  return row
+    ? { id: text(row, 'id'), displayName: text(row, 'display_name'), avatarColor: text(row, 'avatar_color') }
+    : null;
+}
+
+export async function participantNameExists(
+  database: D1Database,
+  groupId: string,
+  displayName: string,
+  excludeParticipantId?: string
+): Promise<boolean> {
+  const normalized = normalizeDisplayName(displayName);
+  const query = excludeParticipantId
+    ? `SELECT id FROM participants
+       WHERE group_id = ? AND lower(trim(display_name)) = lower(trim(?)) AND id != ?
+       LIMIT 1`
+    : `SELECT id FROM participants
+       WHERE group_id = ? AND lower(trim(display_name)) = lower(trim(?))
+       LIMIT 1`;
+  const statement = database.prepare(query);
+  const row = excludeParticipantId
+    ? await statement.bind(groupId, normalized, excludeParticipantId).first<Row>()
+    : await statement.bind(groupId, normalized).first<Row>();
+  return Boolean(row);
+}
+
+export async function updateParticipantNameInGroup(
+  database: D1Database,
+  groupId: string,
   participantId: string,
   displayName: string
-): Promise<Participant> {
+): Promise<Participant | null> {
   await database
-    .prepare('UPDATE participants SET display_name = ? WHERE id = ?')
-    .bind(displayName.trim().slice(0, 40), participantId)
+    .prepare('UPDATE participants SET display_name = ? WHERE id = ? AND group_id = ?')
+    .bind(normalizeDisplayName(displayName), participantId, groupId)
     .run();
-  const participant = await getParticipant(database, participantId);
-  if (!participant) throw new Error('Participant not found');
-  return participant;
+  return getParticipantInGroup(database, groupId, participantId);
 }
 
 export async function getSocialData(database: D1Database, groupId: string): Promise<{ interests: Interest[]; notes: Note[] }> {

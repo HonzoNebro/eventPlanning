@@ -1,16 +1,23 @@
 import { json } from '@sveltejs/kit';
-import { accessCookieName, defaultSecret, signSession } from '$lib/session';
+import { accessCookieName, defaultSecret, readSession, signSession } from '$lib/session';
 import { db } from '$lib/server/db';
-import { findGroupByToken } from '$lib/server/repository';
+import { findGroupByToken, getParticipantInGroup } from '$lib/server/repository';
 
 export async function POST({ cookies, params, platform }) {
   const database = db(platform);
   const group = await findGroupByToken(database, params.token);
   if (!group) return json({ message: 'Not found' }, { status: 404 });
 
+  const secret = defaultSecret(platform);
+  const currentSession = await readSession(secret, cookies.get(accessCookieName()));
+  const currentParticipant =
+    currentSession?.groupId === group.id
+      ? await getParticipantInGroup(database, group.id, currentSession.participantId)
+      : null;
+
   cookies.set(
     accessCookieName(),
-    await signSession(defaultSecret(platform), { groupId: group.id, issuedAt: Date.now() }),
+    await signSession(secret, { groupId: group.id, participantId: currentParticipant?.id, issuedAt: Date.now() }),
     {
       path: '/',
       httpOnly: true,
