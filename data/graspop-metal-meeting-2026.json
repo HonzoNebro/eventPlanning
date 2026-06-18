@@ -1,0 +1,3082 @@
+{
+  "event": {
+    "slug": "graspop-metal-meeting-2026",
+    "name": "Graspop Metal Meeting 2026",
+    "timezone": "Europe/Brussels",
+    "startsOn": "2026-06-17",
+    "endsOn": "2026-06-21",
+    "isPublic": true
+  },
+  "days": [
+    {
+      "id": "graspop-metal-meeting-2026-2026-06-17",
+      "label": "Mié 17",
+      "visualStartsAt": "2026-06-17T18:00:00+02:00",
+      "visualEndsAt": "2026-06-18T02:00:00+02:00",
+      "durationMinutes": 480
+    },
+    {
+      "id": "graspop-metal-meeting-2026-2026-06-18",
+      "label": "Jue 18",
+      "visualStartsAt": "2026-06-18T11:25:00+02:00",
+      "visualEndsAt": "2026-06-19T05:25:00+02:00",
+      "durationMinutes": 1080
+    },
+    {
+      "id": "graspop-metal-meeting-2026-2026-06-19",
+      "label": "Vie 19",
+      "visualStartsAt": "2026-06-19T11:25:00+02:00",
+      "visualEndsAt": "2026-06-20T05:25:00+02:00",
+      "durationMinutes": 1080
+    },
+    {
+      "id": "graspop-metal-meeting-2026-2026-06-20",
+      "label": "Sáb 20",
+      "visualStartsAt": "2026-06-20T11:25:00+02:00",
+      "visualEndsAt": "2026-06-21T05:25:00+02:00",
+      "durationMinutes": 1080
+    },
+    {
+      "id": "graspop-metal-meeting-2026-2026-06-21",
+      "label": "Dom 21",
+      "visualStartsAt": "2026-06-21T11:25:00+02:00",
+      "visualEndsAt": "2026-06-22T05:25:00+02:00",
+      "durationMinutes": 1080
+    }
+  ],
+  "stages": [
+    {
+      "id": "graspop-metal-meeting-2026-south-stage",
+      "name": "South Stage",
+      "color": "#d00000",
+      "order": 1
+    },
+    {
+      "id": "graspop-metal-meeting-2026-north-stage",
+      "name": "North Stage",
+      "color": "#2563eb",
+      "order": 2
+    },
+    {
+      "id": "graspop-metal-meeting-2026-marquee",
+      "name": "Marquee",
+      "color": "#7c3aed",
+      "order": 3
+    },
+    {
+      "id": "graspop-metal-meeting-2026-jupiler-stage",
+      "name": "Jupiler Stage",
+      "color": "#f59e0b",
+      "order": 4
+    },
+    {
+      "id": "graspop-metal-meeting-2026-metal-dome",
+      "name": "Metal Dome",
+      "color": "#16a34a",
+      "order": 5
+    },
+    {
+      "id": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "name": "Classic Rock Café",
+      "color": "#ef4444",
+      "order": 6
+    }
+  ],
+  "dayMarkers": [],
+  "artists": [
+    {
+      "id": "graspop-metal-meeting-2026-a-day-to-remember",
+      "name": "A Day to Remember",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-accept",
+      "name": "Accept",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-alice-cooper",
+      "name": "Alice Cooper",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-alter-bridge",
+      "name": "Alter Bridge",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-am-zing-snake",
+      "name": "AmÆzing Snäke",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ankor",
+      "name": "Ankor",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-anthrax",
+      "name": "Anthrax",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-architects",
+      "name": "Architects",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-asomvel",
+      "name": "Asomvel",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-avatar",
+      "name": "Avatar",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-babymetal",
+      "name": "BABYMETAL",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bad-omens",
+      "name": "Bad Omens",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bark",
+      "name": "Bark",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-battle-beast",
+      "name": "Battle Beast",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-black-label-society",
+      "name": "Black Label Society",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-blackgold",
+      "name": "BLACKGOLD",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bloodywood",
+      "name": "Bloodywood",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-boneyard-pre-party",
+      "name": "Boneyard Pre-Party",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-breaking-benjamin",
+      "name": "Breaking Benjamin",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bring-me-the-horizon",
+      "name": "Bring Me The Horizon",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bulls-on-parade",
+      "name": "Bulls on Parade",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bury-tomorrow",
+      "name": "Bury Tomorrow",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-carpenter-brut",
+      "name": "Carpenter Brut",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-catch-your-breath",
+      "name": "Catch Your Breath",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-cavalera-chaos-a-d",
+      "name": "Cavalera \"Chaos A.D.\"",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-chop-suey",
+      "name": "Chop Suey",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-combichrist",
+      "name": "Combichrist",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-corrosion-of-conformity",
+      "name": "Corrosion Of Conformity",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-cradle-of-filth",
+      "name": "Cradle Of Filth",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-cult-of-luna",
+      "name": "Cult of Luna",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-danko-jones",
+      "name": "Danko Jones",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-deaftones",
+      "name": "Deaftones",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-death-to-all",
+      "name": "Death To All",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-decapitated",
+      "name": "Decapitated",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-def-leppard",
+      "name": "Def Leppard",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-distant",
+      "name": "Distant",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-carl",
+      "name": "DJ Carl",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet",
+      "name": "DJ Nathachelet",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-drain",
+      "name": "Drain",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-drowning-pool",
+      "name": "Drowning Pool",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dying-wish",
+      "name": "Dying Wish",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ego-kill-talent",
+      "name": "Ego Kill Talent",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-elder",
+      "name": "Elder",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-electric-callboy",
+      "name": "Electric Callboy",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ellende",
+      "name": "Ellende",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-embryonic-autopsy",
+      "name": "Embryonic Autopsy",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-europe",
+      "name": "Europe",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-evergrey",
+      "name": "Evergrey",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-extreme",
+      "name": "Extreme",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-faetooth",
+      "name": "Faetooth",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-feuerschwanz",
+      "name": "Feuerschwanz",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-fleddy-melculy",
+      "name": "Fleddy Melculy",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-football",
+      "name": "Football",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-foreigner",
+      "name": "Foreigner",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-future-palace",
+      "name": "Future Palace",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-gaerea",
+      "name": "Gaerea",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-gatecreeper",
+      "name": "Gatecreeper",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-grade-2",
+      "name": "Grade 2",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-guilt-trip",
+      "name": "Guilt Trip",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-harakiri-for-the-sky",
+      "name": "Harakiri for the Sky",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-hollywood-undead",
+      "name": "Hollywood Undead",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-hulder",
+      "name": "Hulder",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ice-nine-kills",
+      "name": "Ice Nine Kills",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-infected-rain",
+      "name": "Infected Rain",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-john-coffey",
+      "name": "John Coffey",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-kadavar",
+      "name": "Kadavar",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-kanonenfieber",
+      "name": "Kanonenfieber",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-killus",
+      "name": "Killus",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-king-810",
+      "name": "King 810",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-knocked-loose",
+      "name": "Knocked Loose",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-korn-again",
+      "name": "Korn Again",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-kuazar",
+      "name": "Kuazar",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-kublai-khan-tx",
+      "name": "Kublai Khan TX",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-lacuna-coil",
+      "name": "Lacuna Coil",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-lagwagon",
+      "name": "Lagwagon",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-lakeview",
+      "name": "Lakeview",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-leprous",
+      "name": "Leprous",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-letlive",
+      "name": "letlive.",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-life-of-agony",
+      "name": "Life of Agony",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-limp-bizkit",
+      "name": "Limp Bizkit",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-lionheart",
+      "name": "Lionheart",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-loathe",
+      "name": "Loathe",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-magnolia-park",
+      "name": "Magnolia Park",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-malevolence",
+      "name": "Malevolence",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-mammoth",
+      "name": "Mammoth",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-mantah",
+      "name": "Mantah",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-mastodon",
+      "name": "Mastodon",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-megadeth",
+      "name": "Megadeth",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-moonspell",
+      "name": "Moonspell",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-mouth-culture",
+      "name": "Mouth Culture",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-nin-uk",
+      "name": "NIN UK",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-old-man-s-child",
+      "name": "Old Man's Child",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-oranssi-pazuzu",
+      "name": "Oranssi Pazuzu",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-orden-ogan",
+      "name": "Orden Ogan",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-p-o-d",
+      "name": "P.O.D.",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-pablo-honey",
+      "name": "Pablo Honey",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-pennywise",
+      "name": "Pennywise",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-periphery",
+      "name": "Periphery",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-possessed",
+      "name": "Possessed",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-powerslave",
+      "name": "Powerslave",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-president",
+      "name": "President",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-primal-fear",
+      "name": "Primal Fear",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-queensryche",
+      "name": "Queensrÿche",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-quicksand",
+      "name": "Quicksand",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rain-city-drive",
+      "name": "Rain City Drive",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-return-to-dust",
+      "name": "Return To Dust",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rivers-of-nihil",
+      "name": "Rivers of Nihil",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rock-the-fox",
+      "name": "Rock The Fox",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rolr",
+      "name": "ROLR",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sabaton",
+      "name": "Sabaton",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-septicflesh",
+      "name": "Septicflesh",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sepultura",
+      "name": "Sepultura",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-set-it-off",
+      "name": "Set It Off",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sex-pistols-featuring-frank-carter",
+      "name": "Sex Pistols featuring Frank Carter",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sinsaenum",
+      "name": "Sinsaenum",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-six-feet-under",
+      "name": "Six Feet Under",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-slay-squad",
+      "name": "Slay Squad",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sleep-theory",
+      "name": "Sleep Theory",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-slip-not",
+      "name": "Slip-NOT",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-snaggletooth",
+      "name": "Snaggletooth",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-snot",
+      "name": "Snot",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-solstafir",
+      "name": "Sólstafir",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sonata-arctica",
+      "name": "Sonata Arctica",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-spouky-kids",
+      "name": "Spouky Kids",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-st-jimmy-s",
+      "name": "St. Jimmy's",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-suicidal-angels",
+      "name": "Suicidal Angels",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-terrorizer",
+      "name": "Terrorizer",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-tesseract",
+      "name": "Tesseract",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-dillinger-escape-plan",
+      "name": "The Dillinger Escape Plan",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-funeral-portrait",
+      "name": "The Funeral Portrait",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-gathering",
+      "name": "The Gathering",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-offspring",
+      "name": "The Offspring",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-plot-in-you",
+      "name": "The Plot In You",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-pretty-wild",
+      "name": "The Pretty Wild",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-thornhill",
+      "name": "Thornhill",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-thrash-attack",
+      "name": "Thrash Attack",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-three-days-grace",
+      "name": "Three Days Grace",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-thrown",
+      "name": "Thrown",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-triggerfinger",
+      "name": "Triggerfinger",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-trivium",
+      "name": "Trivium",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-tx2",
+      "name": "TX2",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ultimate-ozzy",
+      "name": "Ultimate Ozzy",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-uncle-acid-and-the-deadbeats",
+      "name": "Uncle Acid & the Deadbeats",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-venom",
+      "name": "Venom",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-vicious-rumors",
+      "name": "Vicious Rumors",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-vltimas",
+      "name": "Vltimas",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-volbeat",
+      "name": "Volbeat",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-vower",
+      "name": "Vower",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-wargasm",
+      "name": "Wargasm",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-we-came-as-romans",
+      "name": "We Came As Romans",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-wind-rose",
+      "name": "Wind Rose",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-within-temptation",
+      "name": "Within Temptation",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-wolves-in-the-throne-room",
+      "name": "Wolves In The Throne Room",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    },
+    {
+      "id": "graspop-metal-meeting-2026-zetra",
+      "name": "Zetra",
+      "links": {
+        "spotify": ""
+      },
+      "genres": []
+    }
+  ],
+  "performances": [
+    {
+      "id": "graspop-metal-meeting-2026-dj-carl-2026-06-17-classic-rock-cafe-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-17",
+      "artistId": "graspop-metal-meeting-2026-dj-carl",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-17T18:00:00+02:00",
+      "endsAt": "2026-06-18T02:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-17",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-boneyard-pre-party-2026-06-17-metal-dome-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-17",
+      "artistId": "graspop-metal-meeting-2026-boneyard-pre-party",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-17T20:00:00+02:00",
+      "endsAt": "2026-06-18T02:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-17",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-distant-2026-06-18-marquee-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-distant",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-18T12:00:00+02:00",
+      "endsAt": "2026-06-18T12:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-magnolia-park-2026-06-18-metal-dome-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-magnolia-park",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-18T12:00:00+02:00",
+      "endsAt": "2026-06-18T12:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-mantah-2026-06-18-north-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-mantah",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-18T12:00:00+02:00",
+      "endsAt": "2026-06-18T12:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-slay-squad-2026-06-18-jupiler-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-slay-squad",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-18T12:40:00+02:00",
+      "endsAt": "2026-06-18T13:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ego-kill-talent-2026-06-18-south-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-ego-kill-talent",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-18T12:45:00+02:00",
+      "endsAt": "2026-06-18T13:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-snot-2026-06-18-marquee-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-snot",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-18T13:15:00+02:00",
+      "endsAt": "2026-06-18T14:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ankor-2026-06-18-metal-dome-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-ankor",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-18T13:20:00+02:00",
+      "endsAt": "2026-06-18T14:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-combichrist-2026-06-18-north-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-combichrist",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-18T13:35:00+02:00",
+      "endsAt": "2026-06-18T14:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-thrash-attack-2026-06-18-classic-rock-cafe-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-thrash-attack",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-18T14:00:00+02:00",
+      "endsAt": "2026-06-18T14:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-blackgold-2026-06-18-jupiler-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-blackgold",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-18T14:00:00+02:00",
+      "endsAt": "2026-06-18T14:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-danko-jones-2026-06-18-south-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-danko-jones",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-18T14:35:00+02:00",
+      "endsAt": "2026-06-18T15:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dying-wish-2026-06-18-marquee-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-dying-wish",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-18T14:40:00+02:00",
+      "endsAt": "2026-06-18T15:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-funeral-portrait-2026-06-18-metal-dome-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-the-funeral-portrait",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-18T14:50:00+02:00",
+      "endsAt": "2026-06-18T15:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-powerslave-2026-06-18-classic-rock-cafe-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-powerslave",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-18T15:15:00+02:00",
+      "endsAt": "2026-06-18T16:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bulls-on-parade-2026-06-18-north-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-bulls-on-parade",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-18T15:35:00+02:00",
+      "endsAt": "2026-06-18T16:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-thrown-2026-06-18-jupiler-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-thrown",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-18T15:40:00+02:00",
+      "endsAt": "2026-06-18T16:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-gatecreeper-2026-06-18-marquee-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-gatecreeper",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-18T16:05:00+02:00",
+      "endsAt": "2026-06-18T16:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sleep-theory-2026-06-18-metal-dome-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-sleep-theory",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-18T16:30:00+02:00",
+      "endsAt": "2026-06-18T17:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-accept-2026-06-18-south-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-accept",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-18T16:35:00+02:00",
+      "endsAt": "2026-06-18T17:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-thrash-attack-2026-06-18-classic-rock-cafe-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-thrash-attack",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-18T17:00:00+02:00",
+      "endsAt": "2026-06-18T17:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-grade-2-2026-06-18-jupiler-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-grade-2",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-18T17:25:00+02:00",
+      "endsAt": "2026-06-18T18:10:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-wolves-in-the-throne-room-2026-06-18-marquee-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-wolves-in-the-throne-room",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-18T17:35:00+02:00",
+      "endsAt": "2026-06-18T18:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-wind-rose-2026-06-18-north-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-wind-rose",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-18T17:35:00+02:00",
+      "endsAt": "2026-06-18T18:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-lakeview-2026-06-18-metal-dome-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-lakeview",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-18T18:15:00+02:00",
+      "endsAt": "2026-06-18T19:05:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-a-day-to-remember-2026-06-18-south-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-a-day-to-remember",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-18T18:40:00+02:00",
+      "endsAt": "2026-06-18T19:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-john-coffey-2026-06-18-jupiler-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-john-coffey",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-18T19:10:00+02:00",
+      "endsAt": "2026-06-18T20:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-septicflesh-2026-06-18-marquee-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-septicflesh",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-18T19:10:00+02:00",
+      "endsAt": "2026-06-18T20:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-megadeth-2026-06-18-north-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-megadeth",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-18T19:45:00+02:00",
+      "endsAt": "2026-06-18T21:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bloodywood-2026-06-18-metal-dome-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-bloodywood",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-18T20:05:00+02:00",
+      "endsAt": "2026-06-18T20:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-cult-of-luna-2026-06-18-marquee-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-cult-of-luna",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-18T20:45:00+02:00",
+      "endsAt": "2026-06-18T21:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-pennywise-2026-06-18-jupiler-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-pennywise",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-18T21:00:00+02:00",
+      "endsAt": "2026-06-18T21:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-within-temptation-2026-06-18-south-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-within-temptation",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-18T21:10:00+02:00",
+      "endsAt": "2026-06-18T22:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-president-2026-06-18-metal-dome-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-president",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-18T21:55:00+02:00",
+      "endsAt": "2026-06-18T22:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-anthrax-2026-06-18-marquee-08",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-anthrax",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-18T22:25:00+02:00",
+      "endsAt": "2026-06-18T23:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-limp-bizkit-2026-06-18-north-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-limp-bizkit",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-18T22:35:00+02:00",
+      "endsAt": "2026-06-18T23:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-dillinger-escape-plan-2026-06-18-jupiler-stage-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-the-dillinger-escape-plan",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-18T23:00:00+02:00",
+      "endsAt": "2026-06-19T00:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-carl-2026-06-18-classic-rock-cafe-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-dj-carl",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-19T00:00:00+02:00",
+      "endsAt": "2026-06-19T04:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-18-metal-dome-08",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T00:00:00+02:00",
+      "endsAt": "2026-06-19T00:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-offspring-2026-06-18-south-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-the-offspring",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-19T00:00:00+02:00",
+      "endsAt": "2026-06-19T01:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-deaftones-2026-06-18-metal-dome-09",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-deaftones",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T00:50:00+02:00",
+      "endsAt": "2026-06-19T01:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-18-metal-dome-10",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T01:20:00+02:00",
+      "endsAt": "2026-06-19T01:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-nin-uk-2026-06-18-metal-dome-11",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-nin-uk",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T01:40:00+02:00",
+      "endsAt": "2026-06-19T02:10:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-18-metal-dome-12",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T02:10:00+02:00",
+      "endsAt": "2026-06-19T02:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-spouky-kids-2026-06-18-metal-dome-13",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-spouky-kids",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T02:30:00+02:00",
+      "endsAt": "2026-06-19T03:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-18-metal-dome-14",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T03:00:00+02:00",
+      "endsAt": "2026-06-19T03:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-korn-again-2026-06-18-metal-dome-15",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-18",
+      "artistId": "graspop-metal-meeting-2026-korn-again",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T03:20:00+02:00",
+      "endsAt": "2026-06-19T03:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-18",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-hulder-2026-06-19-marquee-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-hulder",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-19T12:00:00+02:00",
+      "endsAt": "2026-06-19T12:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-vower-2026-06-19-metal-dome-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-vower",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T12:00:00+02:00",
+      "endsAt": "2026-06-19T12:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-infected-rain-2026-06-19-north-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-infected-rain",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-19T12:00:00+02:00",
+      "endsAt": "2026-06-19T12:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-thornhill-2026-06-19-jupiler-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-thornhill",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-19T12:40:00+02:00",
+      "endsAt": "2026-06-19T13:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-quicksand-2026-06-19-south-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-quicksand",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-19T12:55:00+02:00",
+      "endsAt": "2026-06-19T13:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bark-2026-06-19-marquee-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-bark",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-19T13:20:00+02:00",
+      "endsAt": "2026-06-19T14:05:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-tx2-2026-06-19-metal-dome-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-tx2",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T13:20:00+02:00",
+      "endsAt": "2026-06-19T14:05:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-drowning-pool-2026-06-19-north-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-drowning-pool",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-19T13:50:00+02:00",
+      "endsAt": "2026-06-19T14:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-am-zing-snake-2026-06-19-classic-rock-cafe-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-am-zing-snake",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-19T14:00:00+02:00",
+      "endsAt": "2026-06-19T14:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-letlive-2026-06-19-jupiler-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-letlive",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-19T14:05:00+02:00",
+      "endsAt": "2026-06-19T14:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-asomvel-2026-06-19-marquee-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-asomvel",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-19T14:45:00+02:00",
+      "endsAt": "2026-06-19T15:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-triggerfinger-2026-06-19-south-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-triggerfinger",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-19T14:45:00+02:00",
+      "endsAt": "2026-06-19T15:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-oranssi-pazuzu-2026-06-19-metal-dome-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-oranssi-pazuzu",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T14:50:00+02:00",
+      "endsAt": "2026-06-19T15:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-am-zing-snake-2026-06-19-classic-rock-cafe-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-am-zing-snake",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-19T15:15:00+02:00",
+      "endsAt": "2026-06-19T16:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-guilt-trip-2026-06-19-jupiler-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-guilt-trip",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-19T15:40:00+02:00",
+      "endsAt": "2026-06-19T16:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-mammoth-2026-06-19-north-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-mammoth",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-19T15:45:00+02:00",
+      "endsAt": "2026-06-19T16:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-suicidal-angels-2026-06-19-marquee-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-suicidal-angels",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-19T16:10:00+02:00",
+      "endsAt": "2026-06-19T17:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-am-zing-snake-2026-06-19-classic-rock-cafe-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-am-zing-snake",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-19T16:30:00+02:00",
+      "endsAt": "2026-06-19T17:15:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-harakiri-for-the-sky-2026-06-19-metal-dome-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-harakiri-for-the-sky",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T16:30:00+02:00",
+      "endsAt": "2026-06-19T17:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-cavalera-chaos-a-d-2026-06-19-south-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-cavalera-chaos-a-d",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-19T16:45:00+02:00",
+      "endsAt": "2026-06-19T17:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-drain-2026-06-19-jupiler-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-drain",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-19T17:25:00+02:00",
+      "endsAt": "2026-06-19T18:10:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-old-man-s-child-2026-06-19-marquee-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-old-man-s-child",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-19T17:40:00+02:00",
+      "endsAt": "2026-06-19T18:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-trivium-2026-06-19-north-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-trivium",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-19T17:45:00+02:00",
+      "endsAt": "2026-06-19T18:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-elder-2026-06-19-metal-dome-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-elder",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T18:15:00+02:00",
+      "endsAt": "2026-06-19T19:05:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sex-pistols-featuring-frank-carter-2026-06-19-south-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-sex-pistols-featuring-frank-carter",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-19T18:45:00+02:00",
+      "endsAt": "2026-06-19T19:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rolr-2026-06-19-classic-rock-cafe-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-rolr",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-19T19:00:00+02:00",
+      "endsAt": "2026-06-19T19:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-we-came-as-romans-2026-06-19-jupiler-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-we-came-as-romans",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-19T19:10:00+02:00",
+      "endsAt": "2026-06-19T20:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-possessed-2026-06-19-marquee-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-possessed",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-19T19:10:00+02:00",
+      "endsAt": "2026-06-19T20:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-breaking-benjamin-2026-06-19-north-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-breaking-benjamin",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-19T19:55:00+02:00",
+      "endsAt": "2026-06-19T21:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-kadavar-2026-06-19-metal-dome-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-kadavar",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T20:05:00+02:00",
+      "endsAt": "2026-06-19T20:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rolr-2026-06-19-classic-rock-cafe-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-rolr",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-19T20:15:00+02:00",
+      "endsAt": "2026-06-19T21:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-death-to-all-2026-06-19-marquee-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-death-to-all",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-19T20:45:00+02:00",
+      "endsAt": "2026-06-19T21:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-kublai-khan-tx-2026-06-19-jupiler-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-kublai-khan-tx",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-19T21:00:00+02:00",
+      "endsAt": "2026-06-19T21:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-alter-bridge-2026-06-19-south-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-alter-bridge",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-19T21:10:00+02:00",
+      "endsAt": "2026-06-19T22:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rolr-2026-06-19-classic-rock-cafe-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-rolr",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-19T21:30:00+02:00",
+      "endsAt": "2026-06-19T22:15:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-leprous-2026-06-19-metal-dome-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-leprous",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-19T21:55:00+02:00",
+      "endsAt": "2026-06-19T22:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-knocked-loose-2026-06-19-north-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-knocked-loose",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-19T22:35:00+02:00",
+      "endsAt": "2026-06-19T23:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-cradle-of-filth-2026-06-19-marquee-08",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-cradle-of-filth",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-19T22:45:00+02:00",
+      "endsAt": "2026-06-20T00:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-lionheart-2026-06-19-jupiler-stage-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-lionheart",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-19T23:30:00+02:00",
+      "endsAt": "2026-06-20T00:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-carl-2026-06-19-classic-rock-cafe-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-dj-carl",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-20T00:00:00+02:00",
+      "endsAt": "2026-06-20T04:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-volbeat-2026-06-19-south-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-volbeat",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-20T00:00:00+02:00",
+      "endsAt": "2026-06-20T01:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-19-metal-dome-08",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T00:30:00+02:00",
+      "endsAt": "2026-06-20T01:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-st-jimmy-s-2026-06-19-metal-dome-09",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-st-jimmy-s",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T01:30:00+02:00",
+      "endsAt": "2026-06-20T02:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-19-metal-dome-10",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T02:30:00+02:00",
+      "endsAt": "2026-06-20T02:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-pablo-honey-2026-06-19-metal-dome-11",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-19",
+      "artistId": "graspop-metal-meeting-2026-pablo-honey",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T02:50:00+02:00",
+      "endsAt": "2026-06-20T03:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-19",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-mouth-culture-2026-06-20-metal-dome-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-mouth-culture",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T12:00:00+02:00",
+      "endsAt": "2026-06-20T12:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-pretty-wild-2026-06-20-north-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-the-pretty-wild",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-20T12:00:00+02:00",
+      "endsAt": "2026-06-20T12:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-embryonic-autopsy-2026-06-20-marquee-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-embryonic-autopsy",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-20T12:15:00+02:00",
+      "endsAt": "2026-06-20T13:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-vicious-rumors-2026-06-20-jupiler-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-vicious-rumors",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-20T12:40:00+02:00",
+      "endsAt": "2026-06-20T13:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-fleddy-melculy-2026-06-20-south-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-fleddy-melculy",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-20T12:55:00+02:00",
+      "endsAt": "2026-06-20T13:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-faetooth-2026-06-20-metal-dome-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-faetooth",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T13:20:00+02:00",
+      "endsAt": "2026-06-20T14:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sinsaenum-2026-06-20-marquee-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-sinsaenum",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-20T13:40:00+02:00",
+      "endsAt": "2026-06-20T14:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-p-o-d-2026-06-20-north-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-p-o-d",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-20T13:50:00+02:00",
+      "endsAt": "2026-06-20T14:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ultimate-ozzy-2026-06-20-classic-rock-cafe-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-ultimate-ozzy",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-20T14:00:00+02:00",
+      "endsAt": "2026-06-20T15:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-feuerschwanz-2026-06-20-jupiler-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-feuerschwanz",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-20T14:00:00+02:00",
+      "endsAt": "2026-06-20T14:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-malevolence-2026-06-20-south-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-malevolence",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-20T14:45:00+02:00",
+      "endsAt": "2026-06-20T15:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rivers-of-nihil-2026-06-20-metal-dome-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-rivers-of-nihil",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T14:50:00+02:00",
+      "endsAt": "2026-06-20T15:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ellende-2026-06-20-marquee-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-ellende",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-20T15:05:00+02:00",
+      "endsAt": "2026-06-20T15:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-primal-fear-2026-06-20-jupiler-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-primal-fear",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-20T15:40:00+02:00",
+      "endsAt": "2026-06-20T16:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sepultura-2026-06-20-north-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-sepultura",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-20T15:45:00+02:00",
+      "endsAt": "2026-06-20T16:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-snaggletooth-2026-06-20-classic-rock-cafe-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-snaggletooth",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-20T16:00:00+02:00",
+      "endsAt": "2026-06-20T17:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-terrorizer-2026-06-20-marquee-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-terrorizer",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-20T16:30:00+02:00",
+      "endsAt": "2026-06-20T17:15:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-loathe-2026-06-20-metal-dome-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-loathe",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T16:30:00+02:00",
+      "endsAt": "2026-06-20T17:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-hollywood-undead-2026-06-20-south-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-hollywood-undead",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-20T16:45:00+02:00",
+      "endsAt": "2026-06-20T17:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-orden-ogan-2026-06-20-jupiler-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-orden-ogan",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-20T17:25:00+02:00",
+      "endsAt": "2026-06-20T18:10:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-three-days-grace-2026-06-20-north-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-three-days-grace",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-20T17:45:00+02:00",
+      "endsAt": "2026-06-20T18:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-lacuna-coil-2026-06-20-marquee-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-lacuna-coil",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-20T17:55:00+02:00",
+      "endsAt": "2026-06-20T18:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-catch-your-breath-2026-06-20-metal-dome-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-catch-your-breath",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T18:15:00+02:00",
+      "endsAt": "2026-06-20T19:05:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-ice-nine-kills-2026-06-20-south-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-ice-nine-kills",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-20T18:50:00+02:00",
+      "endsAt": "2026-06-20T19:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-football-2026-06-20-classic-rock-cafe-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-football",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-20T19:00:00+02:00",
+      "endsAt": "2026-06-20T21:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sonata-arctica-2026-06-20-jupiler-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-sonata-arctica",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-20T19:10:00+02:00",
+      "endsAt": "2026-06-20T20:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-corrosion-of-conformity-2026-06-20-marquee-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-corrosion-of-conformity",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-20T19:25:00+02:00",
+      "endsAt": "2026-06-20T20:15:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-babymetal-2026-06-20-north-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-babymetal",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-20T20:00:00+02:00",
+      "endsAt": "2026-06-20T21:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-uncle-acid-and-the-deadbeats-2026-06-20-metal-dome-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-uncle-acid-and-the-deadbeats",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T20:05:00+02:00",
+      "endsAt": "2026-06-20T20:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-moonspell-2026-06-20-marquee-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-moonspell",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-20T20:55:00+02:00",
+      "endsAt": "2026-06-20T21:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-queensryche-2026-06-20-jupiler-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-queensryche",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-20T21:00:00+02:00",
+      "endsAt": "2026-06-20T21:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-architects-2026-06-20-south-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-architects",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-20T21:10:00+02:00",
+      "endsAt": "2026-06-20T22:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-tesseract-2026-06-20-metal-dome-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-tesseract",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-20T21:55:00+02:00",
+      "endsAt": "2026-06-20T22:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-football-2026-06-20-classic-rock-cafe-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-football",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-20T22:00:00+02:00",
+      "endsAt": "2026-06-21T00:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-six-feet-under-2026-06-20-marquee-08",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-six-feet-under",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-20T22:35:00+02:00",
+      "endsAt": "2026-06-20T23:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bad-omens-2026-06-20-north-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-bad-omens",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-20T22:35:00+02:00",
+      "endsAt": "2026-06-20T23:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-avatar-2026-06-20-jupiler-stage-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-avatar",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-20T23:00:00+02:00",
+      "endsAt": "2026-06-21T00:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-carl-2026-06-20-classic-rock-cafe-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-dj-carl",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-21T00:00:00+02:00",
+      "endsAt": "2026-06-21T04:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bring-me-the-horizon-2026-06-20-south-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-bring-me-the-horizon",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-21T00:00:00+02:00",
+      "endsAt": "2026-06-21T01:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-20-metal-dome-08",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T00:30:00+02:00",
+      "endsAt": "2026-06-21T01:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-slip-not-2026-06-20-metal-dome-09",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-slip-not",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T01:30:00+02:00",
+      "endsAt": "2026-06-21T02:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-20-metal-dome-10",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T02:30:00+02:00",
+      "endsAt": "2026-06-21T02:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-chop-suey-2026-06-20-metal-dome-11",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-20",
+      "artistId": "graspop-metal-meeting-2026-chop-suey",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T02:50:00+02:00",
+      "endsAt": "2026-06-21T03:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-20",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-killus-2026-06-21-marquee-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-killus",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-21T12:00:00+02:00",
+      "endsAt": "2026-06-21T12:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-return-to-dust-2026-06-21-metal-dome-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-return-to-dust",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T12:00:00+02:00",
+      "endsAt": "2026-06-21T12:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-battle-beast-2026-06-21-south-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-battle-beast",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-21T12:00:00+02:00",
+      "endsAt": "2026-06-21T12:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-kuazar-2026-06-21-jupiler-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-kuazar",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-21T12:40:00+02:00",
+      "endsAt": "2026-06-21T13:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-evergrey-2026-06-21-north-stage-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-evergrey",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-21T12:55:00+02:00",
+      "endsAt": "2026-06-21T13:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-gaerea-2026-06-21-marquee-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-gaerea",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-21T13:15:00+02:00",
+      "endsAt": "2026-06-21T14:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-zetra-2026-06-21-metal-dome-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-zetra",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T13:20:00+02:00",
+      "endsAt": "2026-06-21T14:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-life-of-agony-2026-06-21-south-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-life-of-agony",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-21T13:55:00+02:00",
+      "endsAt": "2026-06-21T14:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-am-zing-snake-2026-06-21-classic-rock-cafe-01",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-am-zing-snake",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-21T14:00:00+02:00",
+      "endsAt": "2026-06-21T14:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-king-810-2026-06-21-jupiler-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-king-810",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-21T14:00:00+02:00",
+      "endsAt": "2026-06-21T14:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-decapitated-2026-06-21-marquee-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-decapitated",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-21T14:40:00+02:00",
+      "endsAt": "2026-06-21T15:30:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rain-city-drive-2026-06-21-metal-dome-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-rain-city-drive",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T14:50:00+02:00",
+      "endsAt": "2026-06-21T15:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-europe-2026-06-21-north-stage-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-europe",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-21T14:55:00+02:00",
+      "endsAt": "2026-06-21T15:45:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-am-zing-snake-2026-06-21-classic-rock-cafe-02",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-am-zing-snake",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-21T15:15:00+02:00",
+      "endsAt": "2026-06-21T16:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-wargasm-2026-06-21-jupiler-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-wargasm",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-21T15:40:00+02:00",
+      "endsAt": "2026-06-21T16:25:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-extreme-2026-06-21-south-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-extreme",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-21T15:55:00+02:00",
+      "endsAt": "2026-06-21T16:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-vltimas-2026-06-21-marquee-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-vltimas",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-21T16:10:00+02:00",
+      "endsAt": "2026-06-21T17:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-am-zing-snake-2026-06-21-classic-rock-cafe-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-am-zing-snake",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-21T16:30:00+02:00",
+      "endsAt": "2026-06-21T17:15:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-future-palace-2026-06-21-metal-dome-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-future-palace",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T16:30:00+02:00",
+      "endsAt": "2026-06-21T17:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-foreigner-2026-06-21-north-stage-03",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-foreigner",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-21T17:05:00+02:00",
+      "endsAt": "2026-06-21T18:05:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-set-it-off-2026-06-21-jupiler-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-set-it-off",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-21T17:25:00+02:00",
+      "endsAt": "2026-06-21T18:10:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-kanonenfieber-2026-06-21-marquee-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-kanonenfieber",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-21T17:40:00+02:00",
+      "endsAt": "2026-06-21T18:40:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-periphery-2026-06-21-metal-dome-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-periphery",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T18:15:00+02:00",
+      "endsAt": "2026-06-21T19:05:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-black-label-society-2026-06-21-south-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-black-label-society",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-21T18:15:00+02:00",
+      "endsAt": "2026-06-21T19:15:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-lagwagon-2026-06-21-jupiler-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-lagwagon",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-21T19:10:00+02:00",
+      "endsAt": "2026-06-21T20:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-gathering-2026-06-21-marquee-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-the-gathering",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-21T19:20:00+02:00",
+      "endsAt": "2026-06-21T20:10:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-alice-cooper-2026-06-21-north-stage-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-alice-cooper",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-21T19:25:00+02:00",
+      "endsAt": "2026-06-21T20:35:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-solstafir-2026-06-21-metal-dome-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-solstafir",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T20:05:00+02:00",
+      "endsAt": "2026-06-21T20:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-electric-callboy-2026-06-21-south-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-electric-callboy",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-21T20:45:00+02:00",
+      "endsAt": "2026-06-21T21:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-venom-2026-06-21-marquee-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-venom",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-21T20:50:00+02:00",
+      "endsAt": "2026-06-21T21:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-football-2026-06-21-classic-rock-cafe-04",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-football",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-21T21:00:00+02:00",
+      "endsAt": "2026-06-21T23:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-bury-tomorrow-2026-06-21-jupiler-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-bury-tomorrow",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-21T21:00:00+02:00",
+      "endsAt": "2026-06-21T21:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-carpenter-brut-2026-06-21-metal-dome-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-carpenter-brut",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-21T21:55:00+02:00",
+      "endsAt": "2026-06-21T22:55:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-def-leppard-2026-06-21-north-stage-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-def-leppard",
+      "stageId": "graspop-metal-meeting-2026-north-stage",
+      "startsAt": "2026-06-21T22:05:00+02:00",
+      "endsAt": "2026-06-21T23:20:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-mastodon-2026-06-21-marquee-08",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-mastodon",
+      "stageId": "graspop-metal-meeting-2026-marquee",
+      "startsAt": "2026-06-21T22:35:00+02:00",
+      "endsAt": "2026-06-21T23:50:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-the-plot-in-you-2026-06-21-jupiler-stage-07",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-the-plot-in-you",
+      "stageId": "graspop-metal-meeting-2026-jupiler-stage",
+      "startsAt": "2026-06-21T23:00:00+02:00",
+      "endsAt": "2026-06-22T00:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-sabaton-2026-06-21-south-stage-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-sabaton",
+      "stageId": "graspop-metal-meeting-2026-south-stage",
+      "startsAt": "2026-06-21T23:30:00+02:00",
+      "endsAt": "2026-06-22T01:15:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-nathachelet-2026-06-21-classic-rock-cafe-05",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-dj-nathachelet",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-22T00:00:00+02:00",
+      "endsAt": "2026-06-22T02:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-dj-carl-2026-06-21-metal-dome-08",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-dj-carl",
+      "stageId": "graspop-metal-meeting-2026-metal-dome",
+      "startsAt": "2026-06-22T01:00:00+02:00",
+      "endsAt": "2026-06-22T04:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    },
+    {
+      "id": "graspop-metal-meeting-2026-rock-the-fox-2026-06-21-classic-rock-cafe-06",
+      "visualDayId": "graspop-metal-meeting-2026-2026-06-21",
+      "artistId": "graspop-metal-meeting-2026-rock-the-fox",
+      "stageId": "graspop-metal-meeting-2026-classic-rock-cafe",
+      "startsAt": "2026-06-22T02:00:00+02:00",
+      "endsAt": "2026-06-22T04:00:00+02:00",
+      "sourceImage": "graspop-2026-2026-06-21",
+      "confidence": "official-schedule-page"
+    }
+  ]
+}
