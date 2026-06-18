@@ -56,6 +56,15 @@
     return social.interests.filter((interest) => interest.performanceId === performanceId);
   }
 
+  function performanceStatus(performanceId: string) {
+    const mine = myVotes.get(performanceId)?.status;
+    if (mine === 'skip') return 'mine-skip';
+    const votes = votesFor(performanceId);
+    if (votes.some((vote) => vote.status === 'going')) return 'going';
+    if (votes.some((vote) => vote.status === 'maybe')) return 'maybe';
+    return 'neutral';
+  }
+
   function notesFor(performanceId: string) {
     return social.notes.filter((note) => note.performanceId === performanceId);
   }
@@ -96,8 +105,23 @@
       {/each}
     </div>
     {#if interactive}
-      <button class:active={routeOnly} class="route-toggle" type="button" onclick={() => (routeOnly = !routeOnly)}>
-        {routeOnly ? 'Mi ruta' : 'Todo'}
+      <button
+        class:active={routeOnly}
+        class="route-toggle icon-button"
+        type="button"
+        aria-label={routeOnly ? 'Mostrar todo el horario' : 'Mostrar mi ruta'}
+        title={routeOnly ? 'Mi ruta' : 'Todo'}
+        onclick={() => (routeOnly = !routeOnly)}
+      >
+        {#if routeOnly}
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 4h12l-5 6v7l-2 2v-9z" />
+          </svg>
+        {:else}
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16M7 12h10M10 18h4" />
+          </svg>
+        {/if}
       </button>
     {/if}
   </header>
@@ -131,8 +155,11 @@
             {@const votes = votesFor(performance.id)}
             {@const going = votes.filter((vote) => vote.status === 'going').length}
             {@const maybe = votes.filter((vote) => vote.status === 'maybe').length}
+            {@const status = performanceStatus(performance.id)}
             <button
-              class:mine={['going', 'maybe'].includes(myVotes.get(performance.id)?.status ?? '')}
+              class:status-going={status === 'going'}
+              class:status-maybe={status === 'maybe'}
+              class:status-skip={status === 'mine-skip'}
               class="performance"
               style={`top:${performance.startMinute * minuteScale}px;height:${Math.max(46, performance.durationMinutes * minuteScale)}px`}
               type="button"
@@ -172,7 +199,9 @@
     {/if}
 
     {#if embed}
-      <iframe title={`Spotify ${artist?.name}`} src={embed} width="100%" height="82" loading="lazy"></iframe>
+      <div class="spotify-frame">
+        <iframe title={`Spotify ${artist?.name}`} src={embed} width="100%" height="352" loading="lazy"></iframe>
+      </div>
     {:else if artist}
       <a class="spotify-link" href={`https://open.spotify.com/search/${encodeURIComponent(artist.name)}`} target="_blank" rel="noreferrer">
         Buscar en Spotify
@@ -181,9 +210,9 @@
 
     {#if interactive}
       <div class="status-buttons">
-        <button class:selected={myVotes.get(selected.id)?.status === 'going'} type="button" onclick={() => handleVote(selected!.id, 'going')}>Me apunto</button>
-        <button class:selected={myVotes.get(selected.id)?.status === 'maybe'} type="button" onclick={() => handleVote(selected!.id, 'maybe')}>Puede</button>
-        <button class:selected={myVotes.get(selected.id)?.status === 'skip'} type="button" onclick={() => handleVote(selected!.id, 'skip')}>Paso</button>
+        <button class:selected={myVotes.get(selected.id)?.status === 'going'} class="going" type="button" onclick={() => handleVote(selected!.id, 'going')}>Me apunto</button>
+        <button class:selected={myVotes.get(selected.id)?.status === 'maybe'} class="maybe" type="button" onclick={() => handleVote(selected!.id, 'maybe')}>Puede</button>
+        <button class:selected={myVotes.get(selected.id)?.status === 'skip'} class="skip" type="button" onclick={() => handleVote(selected!.id, 'skip')}>Paso</button>
       </div>
     {/if}
 
@@ -221,13 +250,20 @@
   .schedule-shell {
     display: grid;
     gap: 8px;
+    height: 100%;
+    min-height: 0;
   }
 
   .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 6;
     display: flex;
     justify-content: space-between;
     gap: 12px;
     align-items: center;
+    padding: 6px 0 8px;
+    background: #050608;
   }
 
   .days {
@@ -238,9 +274,28 @@
 
   .days button,
   .route-toggle {
-    min-height: 34px;
+    min-height: 36px;
     background: rgba(244, 241, 234, 0.1);
     color: #f4f1ea;
+  }
+
+  .icon-button {
+    width: 38px;
+    min-height: 38px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border-radius: 999px;
+  }
+
+  .icon-button svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
   button.active {
@@ -252,13 +307,21 @@
     position: relative;
     display: grid;
     grid-template-columns: 50px 1fr;
-    height: min(74vh, 820px);
+    height: 100%;
+    min-height: min(760px, calc(100vh - 146px));
     overflow: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
     border: 1px solid rgba(244, 241, 234, 0.12);
     background:
       linear-gradient(to bottom, rgba(244, 241, 234, 0.08) 1px, transparent 1px),
       rgba(244, 241, 234, 0.04);
     background-size: 100% 126px;
+  }
+
+  .schedule::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 
   .time-axis {
@@ -279,7 +342,7 @@
   .stage-grid {
     position: relative;
     display: flex;
-    min-width: 680px;
+    min-width: min(720px, calc(100vw - 66px));
     height: var(--day-height);
   }
 
@@ -338,14 +401,37 @@
     gap: 3px;
     overflow: hidden;
     padding: 8px;
-    border-color: color-mix(in srgb, var(--stage-color) 50%, rgba(244, 241, 234, 0.2));
-    background: linear-gradient(180deg, rgba(244, 241, 234, 0.14), rgba(244, 241, 234, 0.07));
+    border-color: color-mix(in srgb, var(--stage-color) 44%, rgba(244, 241, 234, 0.22));
+    background:
+      linear-gradient(180deg, rgba(244, 241, 234, 0.12), rgba(244, 241, 234, 0.05)),
+      #202225;
     color: #f4f1ea;
     text-align: left;
+    box-shadow: inset 3px 0 0 color-mix(in srgb, var(--stage-color) 72%, #f4f1ea 8%);
   }
 
-  .performance.mine {
-    box-shadow: inset 3px 0 0 #31f287;
+  .performance.status-going {
+    border-color: rgba(49, 242, 135, 0.92);
+    background:
+      linear-gradient(180deg, rgba(49, 242, 135, 0.28), rgba(49, 242, 135, 0.09)),
+      #14251b;
+    box-shadow: inset 4px 0 0 #31f287;
+  }
+
+  .performance.status-maybe {
+    border-color: rgba(245, 184, 75, 0.9);
+    background:
+      linear-gradient(180deg, rgba(245, 184, 75, 0.28), rgba(245, 184, 75, 0.08)),
+      #282113;
+    box-shadow: inset 4px 0 0 #f5b84b;
+  }
+
+  .performance.status-skip {
+    border-color: rgba(255, 77, 109, 0.86);
+    background:
+      linear-gradient(180deg, rgba(255, 77, 109, 0.24), rgba(255, 77, 109, 0.07)),
+      #26161a;
+    box-shadow: inset 4px 0 0 #ff4d6d;
   }
 
   .performance strong {
@@ -375,9 +461,15 @@
     z-index: 21;
     width: min(460px, 100vw);
     overflow: auto;
+    scrollbar-width: none;
     padding: 22px;
     border-left: 1px solid rgba(244, 241, 234, 0.14);
     background: #0b0f14;
+  }
+
+  .sheet::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 
   .close {
@@ -421,11 +513,17 @@
     border-radius: 999px;
   }
 
-  iframe {
-    display: block;
+  .spotify-frame {
+    overflow: hidden;
     margin-top: 14px;
     border: 1px solid rgba(244, 241, 234, 0.14);
-    border-radius: 8px;
+    border-radius: 10px;
+    background: #121212;
+  }
+
+  iframe {
+    display: block;
+    border: 0;
     background: #121212;
   }
 
@@ -448,8 +546,18 @@
     color: #f4f1ea;
   }
 
-  .status-buttons .selected {
+  .status-buttons .going.selected {
     background: #31f287;
+    color: #050608;
+  }
+
+  .status-buttons .maybe.selected {
+    background: #f5b84b;
+    color: #050608;
+  }
+
+  .status-buttons .skip.selected {
+    background: #ff4d6d;
     color: #050608;
   }
 
@@ -475,6 +583,58 @@
   }
 
   @media (max-width: 680px) {
+    .topbar {
+      gap: 8px;
+      padding-top: 4px;
+    }
+
+    .days {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .days::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    .days button {
+      flex: 0 0 auto;
+      min-height: 34px;
+      padding: 0 12px;
+    }
+
+    .schedule {
+      grid-template-columns: 42px 1fr;
+      min-height: calc(100vh - 126px);
+    }
+
+    .stage-grid {
+      min-width: max(520px, calc(100vw - 48px));
+    }
+
+    .time-axis span {
+      right: 6px;
+      font-size: 10px;
+    }
+
+    .stage-column h2 {
+      padding: 8px 4px;
+      font-size: 11px;
+    }
+
+    .performance {
+      left: 4px;
+      right: 4px;
+      min-height: 58px;
+      padding: 7px;
+    }
+
+    .performance strong {
+      font-size: 13px;
+    }
+
     .sheet {
       top: auto;
       left: 0;
@@ -483,6 +643,18 @@
       border-radius: 18px 18px 0 0;
       border-left: 0;
       border-top: 1px solid rgba(244, 241, 234, 0.14);
+    }
+
+    .sheet h2 {
+      font-size: clamp(32px, 13vw, 54px);
+    }
+
+    .spotify-frame iframe {
+      height: 300px;
+    }
+
+    .status-buttons {
+      grid-template-columns: 1fr;
     }
   }
 </style>

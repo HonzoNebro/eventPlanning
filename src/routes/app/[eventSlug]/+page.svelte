@@ -44,7 +44,6 @@
         groupUrl = `${location.origin}${location.pathname}?g=${encodeURIComponent(token)}`;
         localStorage.setItem(storageKey, groupUrl);
         await fetch(`/api/groups/activate/${encodeURIComponent(token)}`, { method: 'POST' });
-        history.replaceState({}, '', location.pathname);
       } else {
         groupUrl = localStorage.getItem(storageKey) ?? '';
       }
@@ -106,22 +105,51 @@
   }
 
   async function copyGroupUrl() {
-    if (!groupUrl) return;
-    await navigator.clipboard.writeText(groupUrl);
+    const url = groupUrl || location.href;
+    await navigator.clipboard.writeText(url);
     copied = true;
     window.setTimeout(() => (copied = false), 1600);
   }
 </script>
 
-<main class="page">
+<main class="page social-page">
   <header class="app-header">
     <div>
       <p class="muted">Grupo privado</p>
       <h1>{data.schedule.festival.name}</h1>
     </div>
-    <button class="secondary" type="button" onclick={() => { displayName = participant?.displayName ?? ''; nameModal = true; }}>
-      {participant ? participant.displayName : 'Poner nombre'}
-    </button>
+    <div class="app-actions">
+      <button
+        class="icon-button secondary"
+        type="button"
+        aria-label={participant ? `Cambiar nombre de ${participant.displayName}` : 'Poner nombre'}
+        title={participant ? participant.displayName : 'Poner nombre'}
+        onclick={() => { displayName = participant?.displayName ?? ''; nameModal = true; }}
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 21a8 8 0 0 0-16 0" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </button>
+      <button
+        class="icon-button secondary"
+        type="button"
+        aria-label={copied ? 'Enlace copiado' : 'Copiar enlace del grupo'}
+        title={copied ? 'Copiado' : 'Copiar enlace'}
+        onclick={copyGroupUrl}
+      >
+        {#if copied}
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m5 12 4 4L19 6" />
+          </svg>
+        {:else}
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1" />
+            <path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.1-1.1" />
+          </svg>
+        {/if}
+      </button>
+    </div>
   </header>
 
   {#if loading}
@@ -129,16 +157,6 @@
   {:else if error}
     <p class="center">{error}</p>
   {:else}
-    {#if groupUrl}
-      <section class="share panel">
-        <div>
-          <strong>Enlace del grupo</strong>
-          <p class="muted">Compártelo con tus amigos para que entren al mismo grupo privado.</p>
-        </div>
-        <input readonly value={groupUrl} aria-label="Enlace privado del grupo" />
-        <button class="secondary" type="button" onclick={copyGroupUrl}>{copied ? 'Copiado' : 'Copiar'}</button>
-      </section>
-    {/if}
     <ScheduleView
       schedule={data.schedule}
       interactive
@@ -172,17 +190,30 @@
 
 <style>
   .app-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
-    gap: 16px;
-    align-items: end;
-    margin-bottom: 20px;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 6px;
+    padding: 10px 0 6px;
+    background: #050608;
+  }
+
+  .social-page {
+    width: min(1440px, calc(100vw - 16px));
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    padding: 8px 0 10px;
   }
 
   h1 {
     margin: 0;
-    font-size: clamp(34px, 7vw, 68px);
-    line-height: 0.95;
+    font-size: clamp(26px, 4.6vw, 48px);
+    line-height: 1;
   }
 
   .center {
@@ -191,22 +222,29 @@
     place-items: center;
   }
 
-  .share {
-    display: grid;
-    grid-template-columns: minmax(180px, 0.7fr) minmax(220px, 1fr) auto;
-    gap: 12px;
+  .app-actions {
+    display: flex;
+    gap: 8px;
     align-items: center;
-    padding: 12px;
-    margin-bottom: 16px;
   }
 
-  .share strong {
-    display: block;
-    margin-bottom: 4px;
+  .icon-button {
+    width: 40px;
+    min-height: 40px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border-radius: 999px;
   }
 
-  .share p {
-    margin: 0;
+  .icon-button svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
   .scrim {
@@ -252,11 +290,17 @@
 
   @media (max-width: 680px) {
     .app-header {
-      display: grid;
+      align-items: start;
+      padding-top: 6px;
     }
 
-    .share {
-      grid-template-columns: 1fr;
+    .social-page {
+      width: calc(100vw - 8px);
+      padding-top: 4px;
+    }
+
+    h1 {
+      font-size: clamp(24px, 8vw, 38px);
     }
   }
 </style>
