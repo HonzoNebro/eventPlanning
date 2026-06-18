@@ -113,45 +113,6 @@
 </script>
 
 <main class="page social-page">
-  <header class="app-header">
-    <div>
-      <p class="muted">Grupo privado</p>
-      <h1>{data.schedule.festival.name}</h1>
-    </div>
-    <div class="app-actions">
-      <button
-        class="icon-button secondary"
-        type="button"
-        aria-label={participant ? `Cambiar nombre de ${participant.displayName}` : 'Poner nombre'}
-        title={participant ? participant.displayName : 'Poner nombre'}
-        onclick={() => { displayName = participant?.displayName ?? ''; nameModal = true; }}
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20 21a8 8 0 0 0-16 0" />
-          <circle cx="12" cy="7" r="4" />
-        </svg>
-      </button>
-      <button
-        class="icon-button secondary"
-        type="button"
-        aria-label={copied ? 'Enlace copiado' : 'Copiar enlace del grupo'}
-        title={copied ? 'Copiado' : 'Copiar enlace'}
-        onclick={copyGroupUrl}
-      >
-        {#if copied}
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m5 12 4 4L19 6" />
-          </svg>
-        {:else}
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1" />
-            <path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.1-1.1" />
-          </svg>
-        {/if}
-      </button>
-    </div>
-  </header>
-
   {#if loading}
     <p class="center muted">Cargando horario...</p>
   {:else if error}
@@ -161,7 +122,9 @@
       schedule={data.schedule}
       interactive
       social={{ participants, interests, notes, participant }}
-      onNeedName={() => (nameModal = true)}
+      onNeedName={() => { displayName = participant?.displayName ?? ''; nameModal = true; }}
+      onShare={copyGroupUrl}
+      shareCopied={copied}
       onVote={vote}
       onClearVote={clearVote}
       onAddNote={(performanceId) => { noteModal = performanceId; noteBody = ''; }}
@@ -189,62 +152,17 @@
 {/if}
 
 <style>
-  .app-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    align-items: center;
-    margin-bottom: 6px;
-    padding: 10px 0 6px;
-    background: #050608;
-  }
-
   .social-page {
-    width: min(1440px, calc(100vw - 16px));
+    width: min(1480px, calc(100vw - 16px));
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto minmax(0, 1fr);
-    padding: 8px 0 10px;
-  }
-
-  h1 {
-    margin: 0;
-    font-size: clamp(26px, 4.6vw, 48px);
-    line-height: 1;
+    height: 100vh;
+    padding: 0 0 8px;
   }
 
   .center {
     min-height: 50vh;
     display: grid;
     place-items: center;
-  }
-
-  .app-actions {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-
-  .icon-button {
-    width: 40px;
-    min-height: 40px;
-    display: grid;
-    place-items: center;
-    padding: 0;
-    border-radius: 999px;
-  }
-
-  .icon-button svg {
-    width: 18px;
-    height: 18px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
   }
 
   .scrim {
@@ -289,18 +207,9 @@
   }
 
   @media (max-width: 680px) {
-    .app-header {
-      align-items: start;
-      padding-top: 6px;
-    }
-
     .social-page {
       width: calc(100vw - 8px);
-      padding-top: 4px;
-    }
-
-    h1 {
-      font-size: clamp(24px, 8vw, 38px);
+      padding-bottom: 4px;
     }
   }
 </style>

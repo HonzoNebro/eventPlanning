@@ -11,6 +11,8 @@
     };
     interactive?: boolean;
     onNeedName?: () => void;
+    onShare?: () => void;
+    shareCopied?: boolean;
     onVote?: (performanceId: string, status: InterestStatus) => void;
     onClearVote?: (performanceId: string) => void;
     onAddNote?: (performanceId: string) => void;
@@ -22,6 +24,8 @@
     social = { participants: [], interests: [], notes: [], participant: null },
     interactive = false,
     onNeedName,
+    onShare,
+    shareCopied = false,
     onVote,
     onClearVote,
     onAddNote,
@@ -105,24 +109,75 @@
       {/each}
     </div>
     {#if interactive}
-      <button
-        class:active={routeOnly}
-        class="route-toggle icon-button"
-        type="button"
-        aria-label={routeOnly ? 'Mostrar todo el horario' : 'Mostrar mi ruta'}
-        title={routeOnly ? 'Mi ruta' : 'Todo'}
-        onclick={() => (routeOnly = !routeOnly)}
-      >
-        {#if routeOnly}
+      <div class="toolbar-actions">
+        <button
+          class="icon-button"
+          type="button"
+          aria-label={social.participant ? `Cambiar nombre de ${social.participant.displayName}` : 'Poner nombre'}
+          title={social.participant ? social.participant.displayName : 'Poner nombre'}
+          onclick={() => onNeedName?.()}
+        >
           <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 4h12l-5 6v7l-2 2v-9z" />
+            <path d="M20 21a8 8 0 0 0-16 0" />
+            <circle cx="12" cy="7" r="4" />
           </svg>
-        {:else}
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 6h16M7 12h10M10 18h4" />
-          </svg>
+        </button>
+        <button
+          class:active={routeOnly}
+          class="route-toggle icon-button"
+          type="button"
+          aria-label={routeOnly ? 'Mostrar todo el horario' : 'Mostrar mi ruta'}
+          title={routeOnly ? 'Mi ruta' : 'Todo'}
+          onclick={() => (routeOnly = !routeOnly)}
+        >
+          {#if routeOnly}
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 4h12l-5 6v7l-2 2v-9z" />
+            </svg>
+          {:else}
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16M7 12h10M10 18h4" />
+            </svg>
+          {/if}
+        </button>
+        <button
+          class="icon-button"
+          type="button"
+          aria-label={shareCopied ? 'Enlace copiado' : 'Copiar enlace del grupo'}
+          title={shareCopied ? 'Copiado' : 'Copiar enlace'}
+          onclick={() => onShare?.()}
+        >
+          {#if shareCopied}
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m5 12 4 4L19 6" />
+            </svg>
+          {:else}
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1" />
+              <path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.1-1.1" />
+            </svg>
+          {/if}
+        </button>
+      </div>
+    {:else if onShare || onNeedName}
+      <div class="toolbar-actions">
+        {#if onNeedName}
+          <button class="icon-button" type="button" aria-label="Poner nombre" onclick={() => onNeedName?.()}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 21a8 8 0 0 0-16 0" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </button>
         {/if}
-      </button>
+        {#if onShare}
+          <button class="icon-button" type="button" aria-label="Copiar enlace" onclick={() => onShare?.()}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1" />
+              <path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.1-1.1" />
+            </svg>
+          </button>
+        {/if}
+      </div>
     {/if}
   </header>
 
@@ -257,13 +312,14 @@
   .topbar {
     position: sticky;
     top: 0;
-    z-index: 6;
+    z-index: 12;
     display: flex;
     justify-content: space-between;
     gap: 12px;
     align-items: center;
-    padding: 6px 0 8px;
-    background: #050608;
+    padding: 8px 0 10px;
+    background: linear-gradient(180deg, rgba(5, 6, 8, 0.98), rgba(5, 6, 8, 0.88));
+    backdrop-filter: blur(12px);
   }
 
   .days {
@@ -273,15 +329,28 @@
   }
 
   .days button,
-  .route-toggle {
-    min-height: 36px;
-    background: rgba(244, 241, 234, 0.1);
+  .route-toggle,
+  .icon-button {
+    min-height: 42px;
+    border-radius: 999px;
+    border-color: rgba(244, 241, 234, 0.18);
+    background: rgba(244, 241, 234, 0.08);
     color: #f4f1ea;
   }
 
+  .days button {
+    padding: 0 18px;
+    font-size: 18px;
+  }
+
+  .toolbar-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
   .icon-button {
-    width: 38px;
-    min-height: 38px;
+    width: 42px;
     display: grid;
     place-items: center;
     padding: 0;
@@ -308,11 +377,12 @@
     display: grid;
     grid-template-columns: 50px 1fr;
     height: 100%;
-    min-height: min(760px, calc(100vh - 146px));
+    min-height: min(820px, calc(100vh - 70px));
     overflow: auto;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-    border: 1px solid rgba(244, 241, 234, 0.12);
+    border: 1px solid rgba(244, 241, 234, 0.1);
+    border-radius: 0;
     background:
       linear-gradient(to bottom, rgba(244, 241, 234, 0.08) 1px, transparent 1px),
       rgba(244, 241, 234, 0.04);
@@ -327,7 +397,7 @@
   .time-axis {
     position: sticky;
     left: 0;
-    z-index: 2;
+    z-index: 4;
     height: var(--day-height);
     background: rgba(5, 6, 8, 0.82);
   }
@@ -379,16 +449,19 @@
     flex: 1 1 0;
     min-width: 0;
     border-left: 1px solid rgba(244, 241, 234, 0.1);
+    background: linear-gradient(180deg, color-mix(in srgb, var(--stage-color) 10%, transparent), transparent 34%);
   }
 
   .stage-column h2 {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     margin: 0;
     padding: 10px 6px;
-    background: color-mix(in srgb, var(--stage-color) 24%, #050608);
-    font-size: 13px;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--stage-color) 34%, #050608), rgba(5, 6, 8, 0.94));
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0;
     text-align: center;
   }
 
@@ -401,37 +474,46 @@
     gap: 3px;
     overflow: hidden;
     padding: 8px;
-    border-color: color-mix(in srgb, var(--stage-color) 44%, rgba(244, 241, 234, 0.22));
+    border-color: rgba(244, 241, 234, 0.18);
+    border-radius: 18px;
     background:
       linear-gradient(180deg, rgba(244, 241, 234, 0.12), rgba(244, 241, 234, 0.05)),
       #202225;
     color: #f4f1ea;
     text-align: left;
-    box-shadow: inset 3px 0 0 color-mix(in srgb, var(--stage-color) 72%, #f4f1ea 8%);
+    box-shadow:
+      inset 5px 0 0 color-mix(in srgb, var(--stage-color) 78%, #f4f1ea 6%),
+      0 12px 28px rgba(0, 0, 0, 0.22);
   }
 
   .performance.status-going {
-    border-color: rgba(49, 242, 135, 0.92);
+    border-color: rgba(49, 242, 135, 0.7);
     background:
       linear-gradient(180deg, rgba(49, 242, 135, 0.28), rgba(49, 242, 135, 0.09)),
       #14251b;
-    box-shadow: inset 4px 0 0 #31f287;
+    box-shadow:
+      inset 6px 0 0 #31f287,
+      0 0 24px rgba(49, 242, 135, 0.14);
   }
 
   .performance.status-maybe {
-    border-color: rgba(245, 184, 75, 0.9);
+    border-color: rgba(245, 184, 75, 0.7);
     background:
       linear-gradient(180deg, rgba(245, 184, 75, 0.28), rgba(245, 184, 75, 0.08)),
       #282113;
-    box-shadow: inset 4px 0 0 #f5b84b;
+    box-shadow:
+      inset 6px 0 0 #f5b84b,
+      0 0 24px rgba(245, 184, 75, 0.12);
   }
 
   .performance.status-skip {
-    border-color: rgba(255, 77, 109, 0.86);
+    border-color: rgba(255, 77, 109, 0.72);
     background:
       linear-gradient(180deg, rgba(255, 77, 109, 0.24), rgba(255, 77, 109, 0.07)),
       #26161a;
-    box-shadow: inset 4px 0 0 #ff4d6d;
+    box-shadow:
+      inset 6px 0 0 #ff4d6d,
+      0 0 24px rgba(255, 77, 109, 0.12);
   }
 
   .performance strong {
@@ -585,7 +667,7 @@
   @media (max-width: 680px) {
     .topbar {
       gap: 8px;
-      padding-top: 4px;
+      padding: 8px 0;
     }
 
     .days {
@@ -601,13 +683,14 @@
 
     .days button {
       flex: 0 0 auto;
-      min-height: 34px;
+      min-height: 42px;
       padding: 0 12px;
+      font-size: 17px;
     }
 
     .schedule {
       grid-template-columns: 42px 1fr;
-      min-height: calc(100vh - 126px);
+      min-height: calc(100vh - 62px);
     }
 
     .stage-grid {
@@ -627,7 +710,7 @@
     .performance {
       left: 4px;
       right: 4px;
-      min-height: 58px;
+      min-height: 74px;
       padding: 7px;
     }
 
